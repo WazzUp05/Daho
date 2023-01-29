@@ -1,0 +1,137 @@
+// TYPOGRAPHY
+%title-h1 {
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+    font-weight: 700;
+}
+
+%title-h2 {
+    font-size: 2.2rem;
+    line-height: 3rem;
+    font-weight: 700;
+}
+
+%title-h3 {
+    font-size: 2rem;
+    line-height: 2.8rem;
+    font-weight: 700;
+}
+
+%title-h4 {
+    font-size: 1.8rem;
+    line-height: 2.6rem;
+    font-weight: 700;
+}
+
+%text-bold-xl {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    font-weight: 700;
+}
+
+%text-bold-l {
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    font-weight: 700;
+}
+
+%text-bold-m {
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    font-weight: 700;
+}
+
+%text-bold-s {
+    font-size: 1rem;
+    line-height: 1.6rem;
+    font-weight: 700;
+}
+
+%bold-underline-xl {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    font-weight: 700;
+}
+
+%bold-underline-l {
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    font-weight: 700;
+}
+
+%bold-underline-m {
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    font-weight: 700;
+}
+
+%bold-underline-s {
+    font-size: 1rem;
+    line-height: 1.6rem;
+    font-weight: 700;
+}
+
+%text-regular-xl {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    font-weight: 400;
+}
+
+%text-regular-l {
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    font-weight: 400;
+}
+
+%text-regular-m {
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    font-weight: 400;
+}
+
+%text-regular-s {
+    font-size: 1rem;
+    line-height: 1.6rem;
+    font-weight: 400;
+}
+
+%regular-cross-xl {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    font-weight: 400;
+}
+
+%regular-cross-l {
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    font-weight: 400;
+}
+
+%regular-cross-m {
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    font-weight: 400;
+}
+
+%regular-cross-s {
+    font-size: 1rem;
+    line-height: 1.6rem;
+    font-weight: 400;
+}
+
+%box-shados-m {
+    box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.04);
+    border-radius: 8px;
+}
+%box-shados-l {
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.08);
+    border-radius: 8px;
+}
+%box-shados-xl {
+    box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.08);
+    border-radius: 8px;
+}
+%box-shados-top {
+    box-shadow: 0px -4px 12px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+}

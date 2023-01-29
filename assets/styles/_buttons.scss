@@ -1,0 +1,131 @@
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.2rem 2.4rem;
+    border-radius: 8px;
+    box-shadow: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    border: 1px solid transparent;
+    &__icon {
+        margin-right: 1rem;
+    }
+    &:disabled {
+        background: $gray-03;
+        color: $gray-30;
+        cursor: none;
+    }
+
+    &--secondary {
+        @extend %fontRegular;
+        background: $secondary-100;
+        color: $white;
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+        font-weight: 700;
+        border: 1px solid $secondary-100;
+        &:hover {
+            background: $secondary-110;
+        }
+        &:active {
+            background: $secondary-120;
+        }
+    }
+    &--accent {
+        @extend %fontRegular;
+        background: $primary-100;
+        color: $white;
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+        font-weight: 700;
+        border: 1px solid $primary-100;
+        &:hover {
+            background: $primary-110;
+        }
+        &:active {
+            background: $primary-120;
+        }
+    }
+    &--critical {
+        @extend %fontRegular;
+        background: $red-100;
+        color: $white;
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+        font-weight: 700;
+        border: 1px solid $red-100;
+        &:hover {
+            background: $red-110;
+        }
+        &:active {
+            background: $red-120;
+        }
+    }
+    &--ghost {
+        @extend %fontRegular;
+        background: transparent;
+        color: $secondary-100;
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+        font-weight: 700;
+        border: 1px solid $secondary-100;
+        &:hover {
+            color: $secondary-110;
+            border: 1px solid $secondary-110;
+        }
+        &:active {
+            background: $secondary-120;
+            color: $white;
+        }
+    }
+    &--outline {
+        background: transparent;
+        color: $secondary-100;
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+        font-weight: 700;
+        border: 1px solid $secondary-100;
+        @extend %fontRegular;
+        &:hover {
+            color: $white;
+            background: $secondary-110;
+            border: 1px solid $secondary-110;
+        }
+        &:active {
+            background: $secondary-120;
+            border: 1px solid $secondary-120;
+            color: $white;
+        }
+    }
+
+    &--xxl {
+        padding: 1.6rem 2.4rem;
+    }
+    &--xl {
+        padding: 1.2rem 2.4rem;
+    }
+    &--l {
+        padding: 0.8rem 2.4rem;
+        font-size: 1.4rem;
+    }
+    &--m {
+        padding: 0.4rem 2.4rem;
+        font-size: 1.4rem;
+        &__icon {
+            margin-right: 0.97rem;
+        }
+    }
+    &--s {
+        padding: 0.25rem 2.4rem 0.15rem 2.5rem;
+        font-size: 1.2rem;
+        line-height: 2rem;
+        &__icon {
+            margin-right: 0.93rem;
+        }
+    }
+}

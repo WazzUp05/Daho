@@ -1,0 +1,15 @@
+@import './fluid-typography';
+@import './normalize';
+@import './vars';
+@import './colors';
+@import './fonts';
+@import './buttons';
+@import './grid';
+@import './header/header';
+@import './sliders/header-slider';
+@import './main/main';
+
+.main {
+    background: $bg;
+    margin-top: 4.8rem;
+}

@@ -1,0 +1,15 @@
+@font-face {
+    font-family: 'D-DIN';
+    src: url('../fonts/dinpro.otf');
+}
+@font-face {
+    font-family: 'D-DIN-Bold';
+    src: url('../fonts/dinpro_bold.otf');
+}
+
+%fontRegular {
+    font-family: 'D-DIN';
+}
+%fontBold {
+    font-family: 'D-DIN-Bold';
+}
