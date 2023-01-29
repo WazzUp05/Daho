@@ -38,7 +38,7 @@ $(document).ready(function () {
     });
     $('.popular__item-slider').slick({
         dots: true,
-        autoplay: true,
+        autoplay: false,
         arrows: false,
         fade: true,
         infinite: true,
