@@ -5,7 +5,7 @@
 html {
     font-size: 10px;
     //scroll-behavior: smooth;
-    @extend %fontRegular;
+    font-family: Roboto, system-ui, Tahoma, sans-serif;
 }
 
 @media screen and (max-width: 374px) {

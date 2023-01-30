@@ -1,22 +1,79 @@
 .header {
-    padding: 1.8rem 0 0.8rem 0;
+    padding: 1rem 0 2rem 0;
     background-color: $gray-90;
+    &__header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 2rem;
+    }
+    &__location {
+        display: flex;
+        align-items: center;
+        svg {
+            margin-right: 1.125rem;
+        }
+        span {
+            color: $white;
+            font-weight: 500;
+            font-size: 1.6rem;
+            line-height: 2.4rem;
+        }
+    }
+    &__lang {
+        display: flex;
+        align-items: center;
+        margin-right: 8px;
+        span {
+            font-weight: 500;
+            font-size: 1.4rem;
+            line-height: 2.4rem;
+            margin-left: 6px;
+            color: $white;
+        }
+    }
+    &__link {
+        color: $white;
+        text-decoration: none;
+        margin-right: 2.4rem;
+        font-weight: 400;
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
     &__content {
         display: flex;
-        padding: 0 0.8rem;
         align-items: center;
-        margin-bottom: 1rem;
+    }
+    .catalog-button {
+        margin-right: 2rem;
+        font-weight: 500;
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+        padding: 1.2rem 1.6rem;
     }
     &__logo {
         display: flex;
         align-items: center;
+        margin-right: 2rem;
     }
+
     &__search {
         width: 100%;
-        max-width: 64rem;
-        margin-right: 3.2rem;
+        max-width: 66.4rem;
+        margin-right: 2rem;
+        position: relative;
+        &-logo {
+            position: absolute;
+            left: 12px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
         input {
             padding: 1.2rem 1.6rem;
+            padding-left: 5rem;
             height: 48px;
             width: 100%;
             background: $white;
@@ -39,76 +96,19 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-
-        font-weight: 700;
-        font-size: 1.4rem;
-        line-height: 2.4rem;
-        color: $white;
+        width: 6.4rem;
         text-decoration: none;
         margin-right: 2.4rem;
+        span {
+            height: 1.6rem;
+            font-weight: 400;
+            font-size: 1.2rem;
+            line-height: initial;
+            color: $white;
+        }
         svg {
             margin-bottom: 4px;
         }
-        &:last-child {
-            margin-right: 0;
-        }
-    }
-    .logo {
-        margin-right: 3.2rem;
-    }
-    .button {
-        margin-right: 3.2rem;
-    }
-    &__bottom {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 4px 8px;
-        margin-top: 1rem;
-        &-order {
-            display: flex;
-            align-items: center;
-            border-right: 1px solid #ffffff;
-            padding-right: 0.8rem;
-            margin-right: 0.8rem;
-        }
-        &-left {
-            display: flex;
-            align-items: center;
-            .box-img {
-                margin-right: 0.8rem;
-            }
-            a {
-                color: $white;
-                text-decoration: none;
-                font-weight: 700;
-                font-size: 1.6rem;
-                line-height: 2.4rem;
-            }
-        }
-        &-location {
-            display: flex;
-            align-items: center;
-            color: $secondary-100;
-            span {
-                font-weight: 700;
-                font-size: 1.4rem;
-                line-height: 2.4rem;
-                color: $secondary-100;
-                margin-left: 4px;
-            }
-        }
-        &-arrow {
-            margin-left: 0.8rem;
-        }
-    }
-    &__link {
-        color: $white;
-        text-decoration: none;
-        margin-right: 1.6rem;
-        font-weight: 700;
-        font-size: 1.6rem;
-        line-height: 2.4rem;
         &:last-child {
             margin-right: 0;
         }

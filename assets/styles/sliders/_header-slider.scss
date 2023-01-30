@@ -1,6 +1,50 @@
 .main-slider {
+    margin-bottom: 0 !important;
     img {
         width: 100%;
         max-width: 100%;
+        border-radius: 16px;
+    }
+    .slick-prev,
+    .slick-next {
+        z-index: 1;
+        width: 5rem;
+        height: 5rem;
+    }
+
+    .slick-prev {
+        left: 20px;
+        &::before {
+            content: '';
+            transition: 0.2s;
+            display: block;
+            background: url(../img/icons/slick-arrow.svg) no-repeat center;
+            transform: rotate(180deg);
+            width: 5rem;
+            height: 5rem;
+        }
+    }
+    .slick-next {
+        right: 20px;
+        &::before {
+            content: '';
+            transition: 0.2s;
+            display: block;
+            background: url(../img/icons/slick-arrow.svg) no-repeat center;
+            width: 5rem;
+            height: 5rem;
+        }
+    }
+    .slick-dots {
+        bottom: 20px;
+    }
+    .slick-dots li button::before {
+        font-size: 1.2rem;
+        color: rgba(255, 255, 255, 0.8);
+        opacity: 1;
+    }
+    .slick-dots li.slick-active button::before {
+        color: $white;
+        opacity: 1;
     }
 }
