@@ -14,6 +14,12 @@
     font-size: 1.6rem;
     line-height: 2.4rem;
     border: 1px solid transparent;
+    &:hover {
+        background: #ac8a50;
+    }
+    &:active {
+        background: #997a47;
+    }
     &__icon {
         margin-right: 1rem;
     }
@@ -24,7 +30,7 @@
     }
 
     &--secondary {
-        @extend %fontRegular;
+        font-family: $fontRegular;
         background: $secondary-100;
         color: $white;
         font-size: 1.6rem;
@@ -39,7 +45,7 @@
         }
     }
     &--accent {
-        @extend %fontRegular;
+        font-family: $fontRegular;
         background: $primary-100;
         color: $white;
         font-size: 1.6rem;
@@ -54,7 +60,7 @@
         }
     }
     &--critical {
-        @extend %fontRegular;
+        font-family: $fontRegular;
         background: $red-100;
         color: $white;
         font-size: 1.6rem;
@@ -69,7 +75,7 @@
         }
     }
     &--ghost {
-        @extend %fontRegular;
+        font-family: $fontRegular;
         background: transparent;
         color: $secondary-100;
         font-size: 1.6rem;
@@ -92,7 +98,7 @@
         line-height: 2.4rem;
         font-weight: 700;
         border: 1px solid $secondary-100;
-        @extend %fontRegular;
+        font-family: $fontRegular;
         &:hover {
             color: $white;
             background: $secondary-110;

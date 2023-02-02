@@ -19,6 +19,7 @@
             transition: 0.2s;
             display: block;
             background: url(../img/icons/slick-arrow.svg) no-repeat center;
+            background-size: contain;
             transform: rotate(180deg);
             width: 5rem;
             height: 5rem;
@@ -31,6 +32,7 @@
             transition: 0.2s;
             display: block;
             background: url(../img/icons/slick-arrow.svg) no-repeat center;
+            background-size: contain;
             width: 5rem;
             height: 5rem;
         }
@@ -46,5 +48,41 @@
     .slick-dots li.slick-active button::before {
         color: $white;
         opacity: 1;
+    }
+}
+.slider {
+}
+@media (max-width: 767.98px) {
+    .main-slider {
+        .slick-prev,
+        .slick-next {
+            width: 3rem;
+            height: 3rem;
+        }
+        .slick-prev {
+            left: 5px;
+            &::before {
+                background-size: contain;
+                width: 3rem;
+                height: 3rem;
+            }
+        }
+        .slick-next {
+            right: 5px;
+            &::before {
+                background-size: contain;
+                width: 3rem;
+                height: 3rem;
+            }
+        }
+        .slick-dots {
+            bottom: 0px;
+        }
+        .slick-dots li button::before {
+            font-size: 0.7rem;
+        }
+        .slick-dots li {
+            margin: 0;
+        }
     }
 }

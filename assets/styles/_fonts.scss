@@ -7,9 +7,5 @@
     src: url('../fonts/D-DIN-Bold.otf');
 }
 
-%fontRegular {
-    font-family: 'D-DIN';
-}
-%fontBold {
-    font-family: 'D-DIN-Bold';
-}
+$fontRegular: 'D-DIN';
+$fontBold: 'D-DIN-Bold';

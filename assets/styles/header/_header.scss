@@ -58,6 +58,9 @@
         display: flex;
         align-items: center;
         margin-right: 2rem;
+        img {
+            width: 10.7rem;
+        }
     }
 
     &__search {
@@ -107,6 +110,8 @@
             color: $white;
         }
         svg {
+            width: 3rem;
+            height: 3rem;
             margin-bottom: 4px;
         }
         &:last-child {

@@ -34,6 +34,14 @@ a {
     text-decoration: none;
 }
 
+button {
+    cursor: pointer;
+    font-family: inherit;
+}
+input {
+    font-family: inherit;
+}
+
 @mixin noselect {
     -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none; /* Safari */

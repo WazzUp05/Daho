@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Daho</title>
+        <link rel="stylesheet" href="./assets/libs/bootstrap/bootstrap.min.css" />
+        <link rel="stylesheet" href="./assets/styles/index.css" />
+        <link rel="stylesheet" href="./assets/libs/slick/slick.css" />
+        <link rel="stylesheet" href="./assets/libs/slick/slick-theme.css" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+            crossorigin="anonymous"
+        />
+    </head>
+    <body>
+        <header class="header">
+            <div class="container">
+                <div class="header__header">
+                    <div class="header__location">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M18.75 9C18.75 12.7279 14.25 21.75 12 21.75C9.75 21.75 5.25 12.7279 5.25 9C5.25 5.27208 8.27208 2.25 12 2.25C15.7279 2.25 18.75 5.27208 18.75 9Z"
+                                stroke="white"
+                                stroke-width="1.5"
+                            />
+                            <circle cx="12" cy="9" r="1.5" stroke="white" stroke-width="1.5" />
+                        </svg>
+                        <span>Ташкент</span>
+                    </div>
+                    <nav class="header__nav">
+                        <a href="" class="header__link"> О компании </a>
+                        <a href="" class="header__link"> Партнеры </a>
+                        <a href="" class="header__link"> FAQ </a>
+                        <a href="" class="header__link"> Свяжитесь с нами </a>
+                        <a href="" class="header__link"> Свяжитесь с нами </a>
+                    </nav>
+                    <div class="header__lang">
+                        <img src="./assets/img/icons/ru.png" alt="" />
+                        <span>RU</span>
+                    </div>
+                </div>
+                <div class="header__content">
+                    <a href="/" class="header__logo">
+                        <img src="./assets/img/logo-header.svg" alt="" class="logo" />
+                    </a>
+                    <button class="button catalog-button">
+                        <svg class="button__icon" width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M18.4991 18.5478C18.6284 18.6771 18.804 18.75 18.9868 18.75C19.1695 18.75 19.3448 18.6774 19.474 18.5482C19.6033 18.4189 19.6759 18.2437 19.6759 18.0609C19.6759 17.8781 19.6033 17.7029 19.474 17.5736L15.7495 13.8491L15.2878 13.3874C15.1585 13.2581 14.9832 13.1855 14.8005 13.1855C14.6177 13.1855 14.4421 13.2578 14.3129 13.3871C14.1837 13.5163 14.1114 13.6919 14.1114 13.8746C14.1114 14.0574 14.184 14.2327 14.3132 14.3619L14.7703 14.819L18.4991 18.5478Z"
+                                fill="white"
+                            />
+                            <path
+                                fill-rule="evenodd"
+                                clip-rule="evenodd"
+                                d="M1.34253 13.5577C1.34253 13.2125 1.62235 12.9327 1.96753 12.9327H6.96753C7.31271 12.9327 7.59253 13.2125 7.59253 13.5577C7.59253 13.9029 7.31271 14.1827 6.96753 14.1827H1.96753C1.62235 14.1827 1.34253 13.9029 1.34253 13.5577Z"
+                                fill="white"
+                            />
+                            <path
+                                fill-rule="evenodd"
+                                clip-rule="evenodd"
+                                d="M1.34253 11.0577C1.34253 10.7125 1.62235 10.4327 1.96753 10.4327H6.96753C7.31271 10.4327 7.59253 10.7125 7.59253 11.0577C7.59253 11.4029 7.31271 11.6827 6.96753 11.6827H1.96753C1.62235 11.6827 1.34253 11.4029 1.34253 11.0577Z"
+                                fill="white"
+                            />
+                            <path
+                                fill-rule="evenodd"
+                                clip-rule="evenodd"
+                                d="M1.34253 16.0577C1.34253 15.7125 1.62235 15.4327 1.96753 15.4327H6.96753C7.31271 15.4327 7.59253 15.7125 7.59253 16.0577C7.59253 16.4029 7.31271 16.6827 6.96753 16.6827H1.96753C1.62235 16.6827 1.34253 16.4029 1.34253 16.0577Z"
+                                fill="white"
+                            />
+                            <path
+                                d="M12.7687 16.0596C13.5973 15.7092 14.3153 15.1908 14.7703 14.819L14.3132 14.3619C14.184 14.2327 14.1114 14.0574 14.1114 13.8746C14.1114 13.6919 14.1837 13.5163 14.3129 13.3871C13.4065 14.2934 12.2318 14.7903 12.2318 14.7903C11.5674 15.0713 10.868 15.1988 10.3705 15.2565C9.99245 15.3004 9.68386 15.613 9.68386 15.9936C9.68386 16.3742 9.99328 16.6851 10.372 16.6472C11.6918 16.5151 12.7687 16.0596 12.7687 16.0596Z"
+                                fill="white"
+                            />
+                            <path
+                                d="M12.7687 1.45639C12.7687 1.45639 12.7687 1.45639 12.7687 1.45639C11.2957 0.833344 9.68386 0.833344 9.68386 0.833344C8.07205 0.833344 6.59902 1.45638 6.59901 1.45639C6.59901 1.45639 6.59901 1.45639 6.59901 1.45639C5.17676 2.05795 4.08029 3.15441 4.08028 3.15442C4.08028 3.15442 4.08028 3.15442 4.08027 3.15443C2.98381 4.25089 2.38224 5.67315 2.38224 5.67316C2.38224 5.67316 2.38224 5.67316 2.38224 5.67316C2.01368 6.54454 1.86314 7.46448 1.80165 8.07061C1.76324 8.44924 2.06772 8.75801 2.4483 8.75801C2.82888 8.75801 3.1348 8.44834 3.17969 8.07041C3.30267 7.03492 3.65157 6.21004 3.65157 6.21004C4.14841 5.03537 5.05479 4.12899 5.05481 4.12896C5.05481 4.12896 5.05481 4.12896 5.05481 4.12896C5.9612 3.22258 7.13587 2.72573 7.13589 2.72572C7.13589 2.72572 7.13589 2.72572 7.1359 2.72572C8.35152 2.21155 9.68383 2.21155 9.68386 2.21155C9.68386 2.21155 9.68386 2.21155 9.68386 2.21155C11.0162 2.21155 12.2318 2.72571 12.2318 2.72572C12.2318 2.72572 12.2318 2.72572 12.2318 2.72572C13.4065 3.22256 14.3129 4.12895 14.3129 4.12896C14.3129 4.12896 14.3129 4.12896 14.3129 4.12896C15.2193 5.03534 15.7161 6.21001 15.7162 6.21004C15.7162 6.21004 15.7162 6.21004 15.7162 6.21004C16.2303 7.42564 16.2303 8.75793 16.2303 8.75801C16.2303 8.75801 16.2303 8.75801 16.2303 8.75801C16.2303 10.0903 15.7162 11.3059 15.7162 11.306C15.7162 11.306 15.7162 11.306 15.7161 11.306C15.2193 12.4807 14.3129 13.3871 14.3129 13.3871C14.4421 13.2578 14.6177 13.1855 14.8005 13.1855C14.9832 13.1855 15.1585 13.2581 15.2878 13.3874L15.7495 13.8491C16.5517 12.8684 16.9855 11.8429 16.9855 11.8429C16.9855 11.8429 16.9855 11.8429 16.9855 11.8429C17.6085 10.3698 17.6085 8.75808 17.6085 8.75801C17.6085 8.75801 17.6085 8.75801 17.6085 8.758C17.6085 7.14621 16.9855 5.67319 16.9855 5.67316C16.9855 5.67316 16.9855 5.67316 16.9855 5.67316C16.3839 4.25093 15.2875 3.15448 15.2874 3.15442C15.2874 3.15442 15.2874 3.15442 15.2874 3.15442C14.191 2.05796 12.7687 1.4564 12.7687 1.45639Z"
+                                fill="white"
+                            />
+                        </svg>
+                        Каталог
+                    </button>
+                    <div class="header__search">
+                        <svg class="header__search-logo" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M25.3125 25.3125L19.2552 18.9227M19.2552 18.9227C20.6854 17.4109 21.5625 15.3704 21.5625 13.125C21.5625 8.4651 17.7849 4.6875 13.125 4.6875C8.4651 4.6875 4.6875 8.4651 4.6875 13.125C4.6875 17.7849 8.4651 21.5625 13.125 21.5625C15.5395 21.5625 17.7172 20.5483 19.2552 18.9227Z"
+                                stroke="#00263A"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                            />
+                        </svg>
+
+                        <input type="text" class="search" />
+                    </div>
+                    <div class="header__buttons">
+                        <a href="#" class="header__button"
+                            ><svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="15" cy="8.4375" r="5.625" stroke="white" stroke-width="1.5" />
+                                <path
+                                    d="M22.292 16.6253L22.7773 16.0534V16.0534L22.292 16.6253ZM7.70796 16.6253L7.22273 16.0534L7.70796 16.6253ZM26.0625 22.8125C26.0625 20.2495 24.8615 17.8219 22.7773 16.0534L21.8068 17.1972C23.5905 18.7106 24.5625 20.7343 24.5625 22.8125H26.0625ZM24.5625 22.8125V25.1875H26.0625V22.8125H24.5625ZM23.3125 26.4375H6.6875V27.9375H23.3125V26.4375ZM5.4375 25.1875V22.8125H3.9375V25.1875H5.4375ZM7.22273 16.0534C5.13847 17.8219 3.9375 20.2494 3.9375 22.8125H5.4375C5.4375 20.7343 6.40952 18.7106 8.1932 17.1972L7.22273 16.0534ZM15 13.3125C12.1022 13.3125 9.30325 14.2881 7.22273 16.0534L8.1932 17.1972C9.98061 15.6806 12.4277 14.8125 15 14.8125V13.3125ZM22.7773 16.0534C20.6967 14.2881 17.8978 13.3125 15 13.3125V14.8125C17.5723 14.8125 20.0194 15.6806 21.8068 17.1972L22.7773 16.0534ZM6.6875 26.4375C5.99714 26.4375 5.4375 25.8779 5.4375 25.1875H3.9375C3.9375 26.7063 5.16872 27.9375 6.6875 27.9375V26.4375ZM24.5625 25.1875C24.5625 25.8779 24.0029 26.4375 23.3125 26.4375V27.9375C24.8313 27.9375 26.0625 26.7063 26.0625 25.1875H24.5625Z"
+                                    fill="white"
+                                />
+                            </svg>
+
+                            <span> Профиль</span>
+                        </a>
+                        <a href="#" class="header__button"
+                            ><svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    fill-rule="evenodd"
+                                    clip-rule="evenodd"
+                                    d="M7.56 3.75C4.90771 3.75 2.75 5.9107 2.75 8.59C2.75 11.8405 4.25068 14.4449 6.13923 16.3799C8.03683 18.3242 10.2799 19.542 11.6223 20.0002L11.6296 20.0027L11.6296 20.0028C11.6944 20.0256 11.8286 20.05 12 20.05C12.1714 20.05 12.3056 20.0256 12.3704 20.0028L12.3777 20.0002L12.3777 20.0002C13.7201 19.542 15.9632 18.3242 17.8608 16.3799C19.7493 14.4449 21.25 11.8405 21.25 8.59C21.25 5.9107 19.0923 3.75 16.44 3.75C14.8778 3.75 13.477 4.50911 12.6021 5.68716C12.4606 5.87768 12.2373 5.99 12 5.99C11.7627 5.99 11.5394 5.87768 11.3979 5.68716C10.5225 4.5085 9.13147 3.75 7.56 3.75ZM1.25 8.59C1.25 5.0893 4.07229 2.25 7.56 2.25C9.29674 2.25 10.8646 2.95599 12.0003 4.09472C13.1385 2.95564 14.7122 2.25 16.44 2.25C19.9277 2.25 22.75 5.0893 22.75 8.59C22.75 12.3395 21.0107 15.3001 18.9342 17.4276C16.8683 19.5443 14.4235 20.8861 12.8657 21.4186C12.5914 21.5147 12.2773 21.55 12 21.55C11.7227 21.55 11.4086 21.5147 11.1343 21.4186C9.57655 20.8861 7.13169 19.5443 5.06577 17.4276C2.98932 15.3001 1.25 12.3395 1.25 8.59Z"
+                                    fill="white"
+                                />
+                            </svg>
+                            <span>Избранное</span>
+                        </a>
+                        <a href="#" class="header__button"
+                            ><svg width="30" height="30" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M10.7308 20.4615C10.7308 21.3111 10.042 22 9.19231 22C8.34263 22 7.65385 21.3111 7.65385 20.4615C7.65385 19.6119 8.34263 18.9231 9.19231 18.9231C10.042 18.9231 10.7308 19.6119 10.7308 20.4615Z"
+                                    fill="white"
+                                />
+                                <path
+                                    d="M20.7308 20.4615C20.7308 21.3111 20.042 22 19.1923 22C18.3426 22 17.6538 21.3111 17.6538 20.4615C17.6538 19.6119 18.3426 18.9231 19.1923 18.9231C20.042 18.9231 20.7308 19.6119 20.7308 20.4615Z"
+                                    fill="white"
+                                />
+                                <path
+                                    fill-rule="evenodd"
+                                    clip-rule="evenodd"
+                                    d="M2.26923 2H3.88462C3.88462 2 4.3993 1.99946 4.81106 2.30961C4.81106 2.30961 5.22281 2.61976 5.36457 3.11539L6.14541 5.84615H22.8173C22.8888 5.84615 22.9599 5.85612 23.0286 5.87575C23.4371 5.99246 23.6737 6.41822 23.5569 6.82671L21.0194 15.708C21.0194 15.708 20.8095 16.4552 20.1896 16.9222C20.1896 16.9222 19.5697 17.3891 18.7981 17.3846L9.59101 17.3846C9.59101 17.3846 8.81492 17.3891 8.19499 16.9222C8.19499 16.9222 7.57508 16.4552 7.36618 15.7115L3.88543 3.53846L2.26923 3.53846C1.8444 3.53846 1.5 3.19407 1.5 2.76923C1.5 2.3444 1.8444 2 2.26923 2ZM8.84536 15.2885L6.58532 7.38462H21.7975L19.5383 15.292C19.5383 15.292 19.4689 15.539 19.264 15.6933C19.264 15.6933 19.0591 15.8477 18.7981 15.8462L9.58207 15.8462C9.58207 15.8462 9.32553 15.8477 9.12063 15.6933C9.12063 15.6933 8.91571 15.539 8.84536 15.2885Z"
+                                    fill="white"
+                                />
+                            </svg>
+                            <span>Корзина</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="#" class="breadcrumb__link">Главная</a>
+                <a href="#" class="breadcrumb__link">Мобильные телефона</a>
+                <a href="#" class="breadcrumb__link">Смартфоны</a>
+                <a href="#" class="breadcrumb__link active">Iphone 14pro</a>
+            </div>
+        </div>
+        <main class="main">
+            <section class="cart">
+                <div class="container">
+                    <div class="cart-wrapper">
+                        <div class="cart-product">
+                            <h1 class="cart-product__title">Смартфон Apple iPhone 14pro 512gb фиолетовый</h1>
+                            <p class="cart-product__arti">Артикул: ZA82191029</p>
+                            <div class="cart-product__product">
+                                <img class="cart-product__product-slider" src="./assets/img/products/iphone-desk.png" alt="" />
+                                <!-- <div class="cart-product__product-slider">
+                                    <div>
+                                        <img src="./assets/img/products/iphone-desk.png" alt="" />
+                                    </div>
+                                    <div>
+                                        <img src="./assets/img/products/iphone-desk.png" alt="" />
+                                    </div>
+                                    <div>
+                                        <img src="./assets/img/products/iphone-desk.png" alt="" />
+                                    </div>
+                                </div> -->
+                                <div class="cart-product__options">
+                                    <div class="cart-product__options-review">
+                                        <div class="cart-product__options-stars">
+                                            <img src="./assets/img/icons/star.svg" alt="" />
+                                            <span>4.7</span>
+                                        </div>
+                                        <a href="#" class="cart-product__options-reviews">(12 оценок)</a>
+                                    </div>
+                                    <div class="cart-product__options-colors">
+                                        <p>Цвет:</p>
+                                        <div class="cart-product__options-colors-wrapper">
+                                            <button class="cart-product__options-color purple active"></button>
+                                            <button class="cart-product__options-color blue"></button>
+                                            <button class="cart-product__options-color white"></button>
+                                            <button class="cart-product__options-color red"></button>
+                                        </div>
+                                    </div>
+                                    <div class="cart-product__options-options">
+                                        <p>Объём памяти:</p>
+                                        <div class="cart-product__options-options-wrapper">
+                                            <button class="cart-product__options-option active">128 GB</button>
+                                            <button class="cart-product__options-option">256 GB</button>
+                                            <button class="cart-product__options-option">512 GB</button>
+                                            <button class="cart-product__options-option">1 TB</button>
+                                        </div>
+                                    </div>
+                                    <div class="cart-product__options-salespeoples">
+                                        <p>Продавцы:</p>
+                                        <div class="cart-product__options-salespeoples-wrapper">
+                                            <button class="cart-product__options-salespeople active">SmartPro</button>
+                                            <button class="cart-product__options-salespeople">VoKK</button>
+                                            <button class="cart-product__options-salespeople">Sulpak</button>
+                                            <button class="cart-product__options-salespeople">Shop_uz</button>
+                                        </div>
+                                    </div>
+                                    <div class="cart-product__options-amount">
+                                        <p>Количество:</p>
+                                        <div class="cart-product__options-amount-wrapper">
+                                            <button class="cart-product__options-amount-btn">
+                                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M1.5 8L14.5 8"
+                                                        stroke="#919191"
+                                                        stroke-width="1.5"
+                                                        stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                    />
+                                                </svg></button
+                                            ><input class="cart-product__options-amount-input" type="text" name="amount" id="amount" /><button
+                                                class="cart-product__options-amount-btn"
+                                            >
+                                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <g clip-path="url(#clip0_315_5624)">
+                                                        <path
+                                                            d="M1.5 8L14.5 8M8 14.5V1.5"
+                                                            stroke="#919191"
+                                                            stroke-width="1.5"
+                                                            stroke-linecap="round"
+                                                            stroke-linejoin="round"
+                                                        />
+                                                    </g>
+                                                    <defs>
+                                                        <clipPath id="clip0_315_5624">
+                                                            <rect width="16" height="16" fill="white" />
+                                                        </clipPath>
+                                                    </defs>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="cart-product__options-description">
+                                        <p>Описание:</p>
+                                        <p>
+                                            The iPhone 14 Pro comes with a 6.1-inch ProMotion OLED display with 1-120Hz adaptive refresh rates, Dolby
+                                            Vision, and a Face ID Dynamic Island that allows Apple to utilize...
+                                        </p>
+                                        <span class="cart-product__options-description__showall">Читать полностью</span>
+                                    </div>
+                                    <!-- <div id="text">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed blandit, risus ut aliquet aliquam, ex est
+                                        accumsan risus, a rutrum dolor risus vel erat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                                        blandit, risus ut aliquet aliquam, ex est accumsan risus, a rutrum dolor risus vel erat. Lorem ipsum dolor sit
+                                        amet, consectetur adipiscing elit. Sed blandit, risus ut aliquet aliquam, ex est accumsan risus, a rutrum
+                                        dolor risus vel erat.
+                                    </div>
+
+                                    <button id="toggleButton">Show More</button> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cart-order">2</div>
+                        <div class="cart-info">
+                            <ul class="nav nav-tabs-custom" id="myTab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button
+                                        class="nav-link active"
+                                        id="salespeople-tab"
+                                        data-bs-toggle="tab"
+                                        data-bs-target="#salespeople-tab-pane"
+                                        type="button"
+                                        role="tab"
+                                        aria-controls="salespeople-tab-pane"
+                                        aria-selected="true"
+                                    >
+                                        Продавцы
+                                    </button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button
+                                        class="nav-link"
+                                        id="description-tab"
+                                        data-bs-toggle="tab"
+                                        data-bs-target="#description-tab-pane"
+                                        type="button"
+                                        role="tab"
+                                        aria-controls="description-tab-pane"
+                                        aria-selected="false"
+                                    >
+                                        Описание товара
+                                    </button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button
+                                        class="nav-link"
+                                        id="review-tab"
+                                        data-bs-toggle="tab"
+                                        data-bs-target="#review-tab-pane"
+                                        type="button"
+                                        role="tab"
+                                        aria-controls="review-tab-pane"
+                                        aria-selected="false"
+                                    >
+                                        Отзывы (9)
+                                    </button>
+                                </li>
+                            </ul>
+                            <div class="tab-content" id="myTabContent">
+                                <div
+                                    class="tab-pane fade show active"
+                                    id="salespeople-tab-pane"
+                                    role="tabpanel"
+                                    aria-labelledby="salespeople-tab"
+                                    tabindex="0"
+                                >
+                                    <div class="salespeople-tab">
+                                        <div class="salespeople-tab__item">
+                                            <div class="salespeople-tab__title">Texnodom</div>
+                                            <div class="salespeople-tab__payment">
+                                                <p class="salespeople-tab__payment-title">Рассрочка</p>
+                                                <div class="salespeople-tab__payment-sum">114 573 сум <span>x 18 мес</span></div>
+                                            </div>
+                                            <div class="salespeople-tab__price">
+                                                <p class="salespeople-tab__price-title">Цена</p>
+                                                <div class="salespeople-tab__price-sum">114 573 сум</div>
+                                            </div>
+                                            <button class="salespeople-tab__button button">Посмотреть</button>
+                                        </div>
+                                        <div class="salespeople-tab__item">
+                                            <div class="salespeople-tab__title">Texnodom</div>
+                                            <div class="salespeople-tab__payment">
+                                                <p class="salespeople-tab__payment-title">Рассрочка</p>
+                                                <div class="salespeople-tab__payment-sum">114 573 сум <span>x 18 мес</span></div>
+                                            </div>
+                                            <div class="salespeople-tab__price">
+                                                <p class="salespeople-tab__price-title">Цена</p>
+                                                <div class="salespeople-tab__price-sum">114 573 сум</div>
+                                            </div>
+                                            <button class="salespeople-tab__button button">Посмотреть</button>
+                                        </div>
+                                        <div class="salespeople-tab__item">
+                                            <div class="salespeople-tab__title">Texnodom</div>
+                                            <div class="salespeople-tab__payment">
+                                                <p class="salespeople-tab__payment-title">Рассрочка</p>
+                                                <div class="salespeople-tab__payment-sum">114 573 сум <span>x 18 мес</span></div>
+                                            </div>
+                                            <div class="salespeople-tab__price">
+                                                <p class="salespeople-tab__price-title">Цена</p>
+                                                <div class="salespeople-tab__price-sum">114 573 сум</div>
+                                            </div>
+                                            <button class="salespeople-tab__button button">Посмотреть</button>
+                                        </div>
+                                        <div class="salespeople-tab__item">
+                                            <div class="salespeople-tab__title">Texnodom</div>
+                                            <div class="salespeople-tab__payment">
+                                                <p class="salespeople-tab__payment-title">Рассрочка</p>
+                                                <div class="salespeople-tab__payment-sum">114 573 сум <span>x 18 мес</span></div>
+                                            </div>
+                                            <div class="salespeople-tab__price">
+                                                <p class="salespeople-tab__price-title">Цена</p>
+                                                <div class="salespeople-tab__price-sum">114 573 сум</div>
+                                            </div>
+                                            <button class="salespeople-tab__button button">Посмотреть</button>
+                                        </div>
+                                        <div class="salespeople-tab__item">
+                                            <div class="salespeople-tab__title">Texnodom</div>
+                                            <div class="salespeople-tab__payment">
+                                                <p class="salespeople-tab__payment-title">Рассрочка</p>
+                                                <div class="salespeople-tab__payment-sum">114 573 сум <span>x 18 мес</span></div>
+                                            </div>
+                                            <div class="salespeople-tab__price">
+                                                <p class="salespeople-tab__price-title">Цена</p>
+                                                <div class="salespeople-tab__price-sum">114 573 сум</div>
+                                            </div>
+                                            <button class="salespeople-tab__button button">Посмотреть</button>
+                                        </div>
+                                        <div class="salespeople-tab__item">
+                                            <div class="salespeople-tab__title">Texnodom</div>
+                                            <div class="salespeople-tab__payment">
+                                                <p class="salespeople-tab__payment-title">Рассрочка</p>
+                                                <div class="salespeople-tab__payment-sum">114 573 сум <span>x 18 мес</span></div>
+                                            </div>
+                                            <div class="salespeople-tab__price">
+                                                <p class="salespeople-tab__price-title">Цена</p>
+                                                <div class="salespeople-tab__price-sum">114 573 сум</div>
+                                            </div>
+                                            <button class="salespeople-tab__button button">Посмотреть</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="description-tab-pane" role="tabpanel" aria-labelledby="description-tab" tabindex="0">
+                                    <div class="description-tab">
+                                        <div class="description-tab__left">
+                                            <div class="description-tab__item">
+                                                <h4 class="description-tab__item-title">Общие Характеристики</h4>
+                                                <div class="description-tab__item-option">
+                                                    <p>Версия ОС</p>
+                                                    <span>iOS16</span>
+                                                </div>
+                                                <div class="description-tab__item-option">
+                                                    <p>Память</p>
+                                                    <span>128 gb</span>
+                                                </div>
+                                                <div class="description-tab__item-option">
+                                                    <p>Диагональ</p>
+                                                    <span>4 дюйма</span>
+                                                </div>
+                                            </div>
+                                            <div class="description-tab__item">
+                                                <h4 class="description-tab__item-title">Общие Характеристики</h4>
+                                                <div class="description-tab__item-option">
+                                                    <p>Версия ОС</p>
+                                                    <span>iOS16</span>
+                                                </div>
+                                                <div class="description-tab__item-option">
+                                                    <p>Память</p>
+                                                    <span>128 gb</span>
+                                                </div>
+                                                <div class="description-tab__item-option">
+                                                    <p>Диагональ</p>
+                                                    <span>4 дюйма</span>
+                                                </div>
+                                            </div>
+                                            <div class="description-tab__item">
+                                                <h4 class="description-tab__item-title">Общие Характеристики</h4>
+                                                <div class="description-tab__item-option">
+                                                    <p>Версия ОС</p>
+                                                    <span>iOS16</span>
+                                                </div>
+                                                <div class="description-tab__item-option">
+                                                    <p>Память</p>
+                                                    <span>128 gb</span>
+                                                </div>
+                                                <div class="description-tab__item-option">
+                                                    <p>Диагональ</p>
+                                                    <span>4 дюйма</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="description-tab__right">
+                                            <div class="description-tab__item">
+                                                <h4 class="description-tab__item-title">Общие Характеристики</h4>
+                                                <div class="description-tab__item-option">
+                                                    <p>Версия ОС</p>
+                                                    <span>iOS16</span>
+                                                </div>
+                                                <div class="description-tab__item-option">
+                                                    <p>Память</p>
+                                                    <span>128 gb</span>
+                                                </div>
+                                                <div class="description-tab__item-option">
+                                                    <p>Диагональ</p>
+                                                    <span>4 дюйма</span>
+                                                </div>
+                                            </div>
+                                            <div class="description-tab__item">
+                                                <h4 class="description-tab__item-title">Общие Характеристики</h4>
+                                                <div class="description-tab__item-option">
+                                                    <p>Версия ОС</p>
+                                                    <span>iOS16</span>
+                                                </div>
+                                                <div class="description-tab__item-option">
+                                                    <p>Память</p>
+                                                    <span>128 gb</span>
+                                                </div>
+                                                <div class="description-tab__item-option">
+                                                    <p>Диагональ</p>
+                                                    <span>4 дюйма</span>
+                                                </div>
+                                            </div>
+                                            <div class="description-tab__item">
+                                                <h4 class="description-tab__item-title">Общие Характеристики</h4>
+                                                <div class="description-tab__item-option">
+                                                    <p>Версия ОС</p>
+                                                    <span>iOS16</span>
+                                                </div>
+                                                <div class="description-tab__item-option">
+                                                    <p>Память</p>
+                                                    <span>128 gb</span>
+                                                </div>
+                                                <div class="description-tab__item-option">
+                                                    <p>Диагональ</p>
+                                                    <span>4 дюйма</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="review-tab-pane" role="tabpanel" aria-labelledby="review-tab" tabindex="0">...</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="popular">
+                <div class="container">
+                    <h2 class="popular__title">Похожие товары</h2>
+                    <div class="popular-wrapper">
+                        <div class="popular__item">
+                            <div class="popular__item-image">
+                                <svg
+                                    class="popular__item-heart"
+                                    width="26"
+                                    height="24"
+                                    viewBox="0 0 26 24"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M13 23C12 23 1 16 1 7.5C1 3.91015 3.91015 1 7.5 1C9.81577 1 11.8487 2.21102 13 4.03432C14.1513 2.21102 16.1842 1 18.5 1C22.0899 1 25 3.91015 25 7.5C25 16 14 23 13 23Z"
+                                        stroke="#00263A"
+                                        stroke-width="1.5"
+                                        stroke-linejoin="round"
+                                    />
+                                </svg>
+                                <img src="./assets/img/products/iphone.png" alt="" />
+                            </div>
+                            <h2 class="popular__item-title"><a href="">iPhone 14 pro max 256 gb Space gray</a></h2>
+                            <div class="popular__item-review">
+                                <div class="popular__item-stars">
+                                    <img src="./assets/img/icons/star.svg" alt="" />
+                                    <span>4.7</span>
+                                </div>
+                                <a href="#" class="popular__item-reviews">(12 оценок)</a>
+                            </div>
+                            <div class="popular__item-credit">от 396 000 сом/мес</div>
+                            <div class="popular__item-sum">
+                                <p class="popular__item-sum__sale">3 810 000 сум</p>
+                                <p class="popular__item-sum__main">3 300 000 сум</p>
+                            </div>
+                        </div>
+                        <div class="popular__item">
+                            <div class="popular__item-image">
+                                <svg
+                                    class="popular__item-heart"
+                                    width="26"
+                                    height="24"
+                                    viewBox="0 0 26 24"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M13 23C12 23 1 16 1 7.5C1 3.91015 3.91015 1 7.5 1C9.81577 1 11.8487 2.21102 13 4.03432C14.1513 2.21102 16.1842 1 18.5 1C22.0899 1 25 3.91015 25 7.5C25 16 14 23 13 23Z"
+                                        stroke="#00263A"
+                                        stroke-width="1.5"
+                                        stroke-linejoin="round"
+                                    />
+                                </svg>
+                                <img src="./assets/img/products/iphone.png" alt="" />
+                            </div>
+                            <h2 class="popular__item-title"><a href="">iPhone 14 pro max 256 gb Space gray</a></h2>
+                            <div class="popular__item-review">
+                                <div class="popular__item-stars">
+                                    <img src="./assets/img/icons/star.svg" alt="" />
+                                    <span>4.7</span>
+                                </div>
+                                <a href="#" class="popular__item-reviews">(12 оценок)</a>
+                            </div>
+                            <div class="popular__item-credit">от 396 000 сом/мес</div>
+                            <div class="popular__item-sum">
+                                <p class="popular__item-sum__sale">3 810 000 сум</p>
+                                <p class="popular__item-sum__main">3 300 000 сум</p>
+                            </div>
+                        </div>
+
+                        <div class="popular__item">
+                            <div class="popular__item-image">
+                                <svg
+                                    class="popular__item-heart"
+                                    width="26"
+                                    height="24"
+                                    viewBox="0 0 26 24"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M13 23C12 23 1 16 1 7.5C1 3.91015 3.91015 1 7.5 1C9.81577 1 11.8487 2.21102 13 4.03432C14.1513 2.21102 16.1842 1 18.5 1C22.0899 1 25 3.91015 25 7.5C25 16 14 23 13 23Z"
+                                        stroke="#00263A"
+                                        stroke-width="1.5"
+                                        stroke-linejoin="round"
+                                    />
+                                </svg>
+                                <img src="./assets/img/products/iphone.png" alt="" />
+                            </div>
+                            <h2 class="popular__item-title"><a href="">iPhone 14 pro max 256 gb Space gray</a></h2>
+                            <div class="popular__item-review">
+                                <div class="popular__item-stars">
+                                    <img src="./assets/img/icons/star.svg" alt="" />
+                                    <span>4.7</span>
+                                </div>
+                                <a href="#" class="popular__item-reviews">(12 оценок)</a>
+                            </div>
+                            <div class="popular__item-credit">от 396 000 сом/мес</div>
+                            <div class="popular__item-sum">
+                                <p class="popular__item-sum__sale">3 810 000 сум</p>
+                                <p class="popular__item-sum__main">3 300 000 сум</p>
+                            </div>
+                        </div>
+                        <div class="popular__item">
+                            <div class="popular__item-image">
+                                <svg
+                                    class="popular__item-heart"
+                                    width="26"
+                                    height="24"
+                                    viewBox="0 0 26 24"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M13 23C12 23 1 16 1 7.5C1 3.91015 3.91015 1 7.5 1C9.81577 1 11.8487 2.21102 13 4.03432C14.1513 2.21102 16.1842 1 18.5 1C22.0899 1 25 3.91015 25 7.5C25 16 14 23 13 23Z"
+                                        stroke="#00263A"
+                                        stroke-width="1.5"
+                                        stroke-linejoin="round"
+                                    />
+                                </svg>
+                                <img src="./assets/img/products/iphone.png" alt="" />
+                            </div>
+                            <h2 class="popular__item-title"><a href="">iPhone 14 pro max 256 gb Space gray</a></h2>
+                            <div class="popular__item-review">
+                                <div class="popular__item-stars">
+                                    <img src="./assets/img/icons/star.svg" alt="" />
+                                    <span>4.7</span>
+                                </div>
+                                <a href="#" class="popular__item-reviews">(12 оценок)</a>
+                            </div>
+                            <div class="popular__item-credit">от 396 000 сом/мес</div>
+                            <div class="popular__item-sum">
+                                <p class="popular__item-sum__sale">3 810 000 сум</p>
+                                <p class="popular__item-sum__main">3 300 000 сум</p>
+                            </div>
+                        </div>
+                        <div class="popular__item">
+                            <div class="popular__item-image">
+                                <svg
+                                    class="popular__item-heart"
+                                    width="26"
+                                    height="24"
+                                    viewBox="0 0 26 24"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M13 23C12 23 1 16 1 7.5C1 3.91015 3.91015 1 7.5 1C9.81577 1 11.8487 2.21102 13 4.03432C14.1513 2.21102 16.1842 1 18.5 1C22.0899 1 25 3.91015 25 7.5C25 16 14 23 13 23Z"
+                                        stroke="#00263A"
+                                        stroke-width="1.5"
+                                        stroke-linejoin="round"
+                                    />
+                                </svg>
+                                <img src="./assets/img/products/iphone.png" alt="" />
+                            </div>
+                            <h2 class="popular__item-title"><a href="">iPhone 14 pro max 256 gb Space gray</a></h2>
+                            <div class="popular__item-review">
+                                <div class="popular__item-stars">
+                                    <img src="./assets/img/icons/star.svg" alt="" />
+                                    <span>4.7</span>
+                                </div>
+                                <a href="#" class="popular__item-reviews">(12 оценок)</a>
+                            </div>
+                            <div class="popular__item-credit">от 396 000 сом/мес</div>
+                            <div class="popular__item-sum">
+                                <p class="popular__item-sum__sale">3 810 000 сум</p>
+                                <p class="popular__item-sum__main">3 300 000 сум</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <script type="text/javascript" src="./assets/libs/jquery-3.6.3.js"></script>
+        <script type="text/javascript" src="./assets/libs/bootstrap/bootstrap.min.js"></script>
+        <script type="text/javascript" src="./assets/libs/slick/slick.min.js"></script>
+        <script type="text/javascript" src="./assets/js/index.js"></script>
+    </body>
+</html>
