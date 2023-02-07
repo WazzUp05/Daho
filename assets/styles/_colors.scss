@@ -5,6 +5,7 @@ $brand-black: #00263a;
 $brand-primary: #bf9959;
 $text-secondary: #919191;
 $border-light: #eeeeee;
+$brand-focused: #006499;
 
 $primary-120: #997a47;
 $primary-110: #ac8a50;
@@ -54,3 +55,7 @@ $gray-30: #b3bec4;
 $gray-20: #ccd4d8;
 $gray-10: #e6e9eb;
 $gray-03: #f4f4f4;
+
+.green-text {
+    color: $secondary-100;
+}

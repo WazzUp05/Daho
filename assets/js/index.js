@@ -111,19 +111,22 @@ $(document).ready(function () {
             // instead of a settings object
         ],
     });
-    const textElement = document.getElementById('text');
-    const toggleButton = document.getElementById('toggleButton');
+    const toggleButtons = document.querySelectorAll('.button-show-more');
 
-    toggleButton.addEventListener('click', function () {
-        if (textElement.style.overflow !== 'visible') {
-            textElement.style.overflow = 'visible';
-            textElement.style.WebkitLineClamp = 'none';
-            toggleButton.innerHTML = 'Show Less';
-        } else {
-            textElement.style.overflow = 'hidden';
-            textElement.style.WebkitLineClamp = '3';
-            toggleButton.innerHTML = 'Show More';
-        }
-    });
+    for (let toggleButton of toggleButtons) {
+        toggleButton.addEventListener('click', function () {
+            const textElement = this.previousElementSibling;
+            console.log(textElement);
+            if (textElement.style.overflow !== 'visible') {
+                textElement.style.overflow = 'visible';
+                textElement.style.WebkitLineClamp = 'none';
+                this.innerHTML = 'Свернуть';
+            } else {
+                textElement.style.overflow = 'hidden';
+                textElement.style.WebkitLineClamp = '4';
+                this.innerHTML = 'Показать полный отзыв';
+            }
+        });
+    }
 });
 // Напиши скрипт который будет скрывать текст до 3х строк, а при нажатии на кнопку показывать полностью

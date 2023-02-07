@@ -153,11 +153,16 @@
                     font-size: 1.4rem;
                     line-height: 1.4rem;
                     color: $text-secondary;
-                    margin-bottom: 1.2rem;
+                    margin-bottom: 1rem;
                 }
                 &-wrapper {
                     display: flex;
                     align-items: center;
+                }
+                span {
+                    font-size: 1.5rem;
+                    line-height: 2.2rem;
+                    font-weight: 700;
                 }
             }
             &-salespeople {
@@ -369,6 +374,53 @@
             span {
                 color: $brand-black;
             }
+        }
+    }
+}
+.review-tab {
+    margin-top: 4rem;
+    &__item {
+        padding: 1.6rem 2.4rem;
+        margin-bottom: 2rem;
+        border: 1px solid #eeeeee;
+        border-radius: 20px;
+    }
+    &__stars {
+        img {
+            margin-right: 6px;
+            margin-bottom: 1rem;
+        }
+    }
+    &__text {
+        font-size: 1.4rem;
+        line-height: 2rem;
+        font-weight: 400;
+        color: $brand-black;
+        margin-bottom: 2rem;
+        &-showall {
+            text-align: center;
+            color: $brand-focused;
+            font-size: 1.6rem;
+            background-image: linear-gradient();
+            margin-bottom: 2rem;
+            cursor: pointer;
+        }
+    }
+    &__name {
+        display: flex;
+        align-items: center;
+        font-size: 1.4rem;
+        line-height: 2.2rem;
+        color: $text-secondary;
+        span {
+            color: $text-secondary;
+        }
+        &-dot {
+            width: 5px;
+            height: 5px;
+            background: $text-secondary;
+            margin: 0 8px;
+            border-radius: 50%;
         }
     }
 }

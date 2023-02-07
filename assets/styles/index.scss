@@ -6,6 +6,7 @@
 @import './buttons';
 @import './grid';
 @import './header/header';
+@import './footer/footer';
 @import './sliders/header-slider';
 @import './main/main';
 @import './cart/cart';
@@ -90,9 +91,10 @@ body {
     }
 }
 
-#text {
+.text-more {
     overflow: hidden;
     display: -webkit-box;
-    -webkit-line-clamp: 3;
+    -webkit-line-clamp: 4;
     -webkit-box-orient: vertical;
+    transition: all 0.2s;
 }
