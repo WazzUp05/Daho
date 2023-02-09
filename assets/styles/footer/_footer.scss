@@ -47,9 +47,11 @@
         a {
             font-size: 1.2rem;
             line-height: 1.6rem;
-            color: $gray-90;
+            color: rgba(0, 38, 58, 0.4);
             font-weight: 700;
-            opacity: 0.4;
+        }
+        p {
+            margin-right: 8px;
         }
         a {
             text-decoration: none;
@@ -67,6 +69,51 @@
                 &:hover {
                     opacity: 0.6;
                 }
+            }
+        }
+    }
+    &__partner {
+        background: $gray-75;
+        border-radius: 8px;
+        padding: 1.6rem 0.8rem;
+        text-align: center;
+        margin-top: 8.8rem;
+        h2 {
+            font-size: 1.4rem;
+            line-height: 2.4rem;
+            font-weight: 700;
+            color: $white;
+            margin: 0.8rem 0;
+        }
+        .button {
+            margin: 0 auto;
+        }
+    }
+    &__line {
+        margin-top: 3.2rem;
+        font-weight: 400;
+        font-size: 1.2rem;
+        line-height: 1.6rem;
+        a {
+            color: $gray-65;
+            text-decoration: none;
+            &:hover {
+                opacity: 0.8;
+            }
+        }
+        p {
+            color: $gray-55;
+        }
+    }
+    &__soc {
+        &-item {
+            text-decoration: none;
+            margin-right: 1.6rem;
+            &:hover {
+                opacity: 0.8;
+            }
+            &:last-child {
+                margin-right: 0;
             }
         }
     }

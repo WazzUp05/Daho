@@ -1,0 +1,105 @@
+.form {
+    margin-top: 2rem;
+    &__item {
+        margin-bottom: 3rem;
+    }
+    &__title {
+        margin-bottom: 2rem;
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+        font-weight: 400;
+        letter-spacing: 0.15px;
+        color: $text-secondary;
+    }
+    &__group {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-column-gap: 2rem;
+        grid-row-gap: 2rem;
+        margin-bottom: 2rem;
+
+        &--2 {
+            grid-template-columns: 1fr 1fr;
+        }
+        &--3 {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+        &--4 {
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+        &--5 {
+            grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+        }
+        @media (max-width: 1024px) {
+            &--2 {
+                grid-template-columns: 1fr 1fr;
+            }
+            &--3 {
+                grid-template-columns: 1fr 1fr;
+            }
+            &--4 {
+                grid-template-columns: 1fr 1fr;
+            }
+            &--5 {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+    }
+}
+.form-item {
+    position: relative;
+    // &:nth-child(1) {
+    //     grid-area: one;
+    // }
+    // &:nth-child(2) {
+    //     grid-area: two;
+    // }
+    // &:nth-child(3) {
+    //     grid-area: thee;
+    // }
+    // &:nth-child(4) {
+    //     grid-area: four;
+    // }
+    // &:nth-child(5) {
+    //     grid-area: five;
+    // }
+    input {
+        width: 100%;
+
+        padding: 1.6rem 1.2rem;
+        border: 1px solid #919191;
+        border-radius: 6px;
+        color: $brand-black;
+    }
+    select {
+        width: 100%;
+        height: 5.8rem;
+        padding: 1.6rem 1.2rem;
+        border: 1px solid #919191;
+        border-radius: 6px;
+        color: $brand-black;
+        background: $white;
+        background: url(../img/icons/arrow-select.svg) no-repeat;
+        background-size: 1rem;
+        background-position: top 50% right 18px;
+        -webkit-appearance: none;
+    }
+    option {
+        background: $white;
+    }
+
+    &::placeholder {
+        color: $text-secondary;
+    }
+    label {
+        position: absolute;
+        background: $white;
+        left: 16px;
+        top: -6px;
+        padding: 0 4px;
+        font-size: 1.2rem;
+        line-height: 1.2rem;
+        font-weight: 400;
+        color: $text-secondary;
+    }
+}

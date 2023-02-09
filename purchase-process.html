@@ -153,117 +153,122 @@
                 <div class="container">
                     <div class="cart-wrapper">
                         <div class="cart-product">
-                            <h1 class="cart-product__title">Смартфон Apple iPhone 14pro 512gb фиолетовый</h1>
-                            <p class="cart-product__arti">Артикул: ZA82191029</p>
-                            <div class="cart-product__product">
-                                <img class="cart-product__product-slider" src="./assets/img/products/iphone-desk.png" alt="" />
-                                <!-- <div class="cart-product__product-slider">
-                                    <div>
-                                        <img src="./assets/img/products/iphone-desk.png" alt="" />
-                                    </div>
-                                    <div>
-                                        <img src="./assets/img/products/iphone-desk.png" alt="" />
-                                    </div>
-                                    <div>
-                                        <img src="./assets/img/products/iphone-desk.png" alt="" />
-                                    </div>
-                                </div> -->
-                                <div class="cart-product__options">
-                                    <div class="cart-product__options-review">
-                                        <div class="cart-product__options-stars">
-                                            <img src="./assets/img/icons/star.svg" alt="" />
-                                            <span>4.7</span>
+                            <h1 class="cart-product__title">Способ получения</h1>
+                            <ul class="nav nav-tabs-custom" id="myTab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button
+                                        class="nav-link active"
+                                        id="delivery-tab"
+                                        data-bs-toggle="tab"
+                                        data-bs-target="#delivery-tab-pane"
+                                        type="button"
+                                        role="tab"
+                                        aria-controls="delivery-tab-pane"
+                                        aria-selected="true"
+                                    >
+                                        Доставка
+                                    </button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button
+                                        class="nav-link"
+                                        id="pickup-tab"
+                                        data-bs-toggle="tab"
+                                        data-bs-target="#pickup-tab-pane"
+                                        type="button"
+                                        role="tab"
+                                        aria-controls="pickup-tab-pane"
+                                        aria-selected="false"
+                                    >
+                                        Самовывоз
+                                    </button>
+                                </li>
+                            </ul>
+                            <div class="tab-content" id="myTabContent">
+                                <div
+                                    class="tab-pane fade show active"
+                                    id="delivery-tab-pane"
+                                    role="tabpanel"
+                                    aria-labelledby="delivery-tab"
+                                    tabindex="0"
+                                >
+                                    <form action="" class="form">
+                                        <div class="form__item">
+                                            <h2 class="form__title">Получатель</h2>
+                                            <div class="form__group form__group--3">
+                                                <div class="form-item">
+                                                    <input id="first-name" type="text" />
+                                                    <label for="first-name">Имя</label>
+                                                </div>
+                                                <div class="form-item">
+                                                    <input id="last-name" type="text" />
+                                                    <label for="last-name">Фамилия</label>
+                                                </div>
+                                                <div class="form-item">
+                                                    <input id="phone" type="text" />
+                                                    <label for="phone">Номер телефона</label>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <a href="#" class="cart-product__options-reviews">(12 оценок)</a>
-                                    </div>
-                                    <div class="cart-product__options-colors">
-                                        <p>Цвет:</p>
-                                        <div class="cart-product__options-colors-wrapper">
-                                            <button class="cart-product__options-color purple active"></button>
-                                            <button class="cart-product__options-color blue"></button>
-                                            <button class="cart-product__options-color white"></button>
-                                            <button class="cart-product__options-color red"></button>
+                                        <div class="form__item">
+                                            <h2 class="form__title">Адрес</h2>
+                                            <div class="form__group form__group--2">
+                                                <div class="form-item">
+                                                    <input id="city" type="text" />
+                                                    <label for="city">Город</label>
+                                                </div>
+                                                <div class="form-item">
+                                                    <input id="item" type="text" />
+                                                    <label for="item">Район</label>
+                                                </div>
+                                            </div>
+                                            <div class="form__group form__group--5">
+                                                <div class="form-item">
+                                                    <input id="street" type="text" />
+                                                    <label for="street">Улица</label>
+                                                </div>
+                                                <div class="form-item">
+                                                    <input id="house" type="text" />
+                                                    <label for="house">Дом</label>
+                                                </div>
+                                                <div class="form-item">
+                                                    <input id="room" type="text" />
+                                                    <label for="room">Квартира</label>
+                                                </div>
+                                                <div class="form-item">
+                                                    <input id="porch" type="text" />
+                                                    <label for="porch">Подъезд</label>
+                                                </div>
+                                                <div class="form-item">
+                                                    <input id="floor" type="text" />
+                                                    <label for="floor">Этаж</label>
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="cart-product__options-options">
-                                        <p>Объём памяти:</p>
-                                        <div class="cart-product__options-options-wrapper">
-                                            <button class="cart-product__options-option active"><span>128 GB</span></button>
-                                            <button class="cart-product__options-option">256 GB</button>
-                                            <button class="cart-product__options-option">512 GB</button>
-                                            <button class="cart-product__options-option">1 TB</button>
+                                        <div class="form__item">
+                                            <h2 class="form__title">Дата и время доставки</h2>
+                                            <div class="form__group form__group--2">
+                                                <div class="form-item">
+                                                    <select id="date">
+                                                        <option selected>Выберите дату</option>
+                                                        <option value="2">3 февраля</option>
+                                                        <option value="3">4 февраля</option>
+                                                        <option value="4">5 февраля</option>
+                                                    </select>
+                                                </div>
+                                                <div class="form-item">
+                                                    <select id="time">
+                                                        <option selected>Выберите время</option>
+                                                        <option value="1">09:00 - 12:00</option>
+                                                        <option value="2">12:00 - 14:00</option>
+                                                        <option value="3">15:00 - 16:00</option>
+                                                    </select>
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="cart-product__options-salespeoples">
-                                        <p>Время возврата:</p>
-                                        <span>10 дн.</span>
-                                    </div>
-                                    <div class="cart-product__options-salespeoples">
-                                        <p>В наличии:</p>
-                                        <span class="green-text">2 шт.</span>
-                                    </div>
-                                    <!-- <div class="cart-product__options-salespeoples">
-                                        <p>Продавцы:</p>
-                                        <div class="cart-product__options-salespeoples-wrapper">
-                                            <button class="cart-product__options-salespeople active">SmartPro</button>
-                                            <button class="cart-product__options-salespeople">VoKK</button>
-                                            <button class="cart-product__options-salespeople">Sulpak</button>
-                                            <button class="cart-product__options-salespeople">Shop_uz</button>
-                                        </div>
-                                    </div>
-                                    <div class="cart-product__options-amount">
-                                        <p>Количество:</p>
-                                        <div class="cart-product__options-amount-wrapper">
-                                            <button class="cart-product__options-amount-btn">
-                                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        d="M1.5 8L14.5 8"
-                                                        stroke="#919191"
-                                                        stroke-width="1.5"
-                                                        stroke-linecap="round"
-                                                        stroke-linejoin="round"
-                                                    />
-                                                </svg></button
-                                            ><input class="cart-product__options-amount-input" type="text" name="amount" id="amount" /><button
-                                                class="cart-product__options-amount-btn"
-                                            >
-                                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <g clip-path="url(#clip0_315_5624)">
-                                                        <path
-                                                            d="M1.5 8L14.5 8M8 14.5V1.5"
-                                                            stroke="#919191"
-                                                            stroke-width="1.5"
-                                                            stroke-linecap="round"
-                                                            stroke-linejoin="round"
-                                                        />
-                                                    </g>
-                                                    <defs>
-                                                        <clipPath id="clip0_315_5624">
-                                                            <rect width="16" height="16" fill="white" />
-                                                        </clipPath>
-                                                    </defs>
-                                                </svg>
-                                            </button>
-                                        </div>
-                                    </div>
-                                    <div class="cart-product__options-description">
-                                        <p>Описание:</p>
-                                        <p>
-                                            The iPhone 14 Pro comes with a 6.1-inch ProMotion OLED display with 1-120Hz adaptive refresh rates, Dolby
-                                            Vision, and a Face ID Dynamic Island that allows Apple to utilize...
-                                        </p>
-                                        <span class="cart-product__options-description__showall">Читать полностью</span>
-                                    </div> -->
-                                    <!-- <div id="text">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed blandit, risus ut aliquet aliquam, ex est
-                                        accumsan risus, a rutrum dolor risus vel erat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                                        blandit, risus ut aliquet aliquam, ex est accumsan risus, a rutrum dolor risus vel erat. Lorem ipsum dolor sit
-                                        amet, consectetur adipiscing elit. Sed blandit, risus ut aliquet aliquam, ex est accumsan risus, a rutrum
-                                        dolor risus vel erat.
-                                    </div>
-
-                                    <button id="toggleButton">Show More</button> -->
+                                    </form>
                                 </div>
+                                <div class="tab-pane fade" id="pickup-tab-pane" role="tabpanel" aria-labelledby="pickup-tab" tabindex="0">asd</div>
                             </div>
                         </div>
                         <div class="cart-order">2</div>

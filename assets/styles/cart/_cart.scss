@@ -2,8 +2,20 @@
     &-wrapper {
         display: grid;
         grid-template-columns: 1fr 36.9rem;
+
         grid-column-gap: 2rem;
         grid-row-gap: 1rem;
+
+        grid-template-areas:
+            'product order'
+            'info none';
+        @media (max-width: 1024px) {
+            grid-template-columns: 1fr;
+            grid-template-areas:
+                'order'
+                'product'
+                'info';
+        }
     }
     &-product,
     &-order {
@@ -11,11 +23,20 @@
         padding: 2rem;
         border-radius: 2rem;
     }
+    &-product {
+        grid-area: product;
+    }
     &-order {
+        grid-area: order;
+        height: fit-content;
         position: sticky;
+        @media (max-width: 1024px) {
+            position: relative;
+        }
         top: 0;
     }
     &-info {
+        grid-area: info;
         background: $white;
         padding: 2rem;
         border-radius: 2rem;
