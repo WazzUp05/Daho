@@ -30,10 +30,11 @@
         grid-area: order;
         height: fit-content;
         position: sticky;
+        top: 1rem;
+
         @media (max-width: 1024px) {
             position: relative;
         }
-        top: 0;
     }
     &-info {
         grid-area: info;
@@ -101,7 +102,7 @@
             &-color {
                 width: 4rem;
                 height: 4rem;
-                border: 4px solid transparent;
+                border: 1px solid $brand-black;
                 border-radius: 8px;
                 margin-right: 1.2rem;
                 transition: border 0.2s;
@@ -293,6 +294,63 @@
             }
         }
     }
+    &-order {
+        &__title {
+            font-size: 1.4rem;
+            line-height: 1.4rem;
+            color: $text-secondary;
+            font-weight: 400;
+            margin-bottom: 1rem;
+        }
+        &__magazine {
+            background: #bf9959;
+            border-radius: 222px;
+            padding: 1rem;
+            margin-bottom: 2rem;
+            font-size: 1.4rem;
+            line-height: 1.4rem;
+            color: $white;
+            width: fit-content;
+        }
+        &__buy {
+            .button {
+                width: 100%;
+            }
+        }
+        &__product {
+            display: flex;
+            align-items: center;
+            margin-bottom: 2rem;
+            img {
+                width: 10rem;
+                height: 10rem;
+                margin-right: 2rem;
+            }
+            &-right {
+                &__title {
+                    font-size: 1.6rem;
+                    line-height: 1.9rem;
+                    font-weight: 500;
+                    color: $brand-black;
+                    margin-bottom: 1rem;
+                }
+                &__oldprice {
+                    font-size: 1.4rem;
+                    line-height: 1.4rem;
+                    color: $text-secondary;
+                    text-decoration-line: line-through;
+                    margin-bottom: 1rem;
+                }
+                &__price {
+                    font-size: 2.2rem;
+                    line-height: 2.2rem;
+                    font-weight: 600;
+                    color: $brand-black;
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
 }
 .salespeople-tab {
     &__item {
@@ -368,7 +426,6 @@
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 4rem;
     grid-row-gap: 2rem;
-    margin-top: 4rem;
     &__item {
         margin-bottom: 3rem;
         &-title {
@@ -399,7 +456,6 @@
     }
 }
 .review-tab {
-    margin-top: 4rem;
     &__item {
         padding: 1.6rem 2.4rem;
         margin-bottom: 2rem;
@@ -444,4 +500,7 @@
             border-radius: 50%;
         }
     }
+}
+.tab-pane {
+    padding-top: 2rem;
 }

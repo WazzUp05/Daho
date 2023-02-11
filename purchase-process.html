@@ -145,54 +145,55 @@
                 <a href="#" class="breadcrumb__link">Главная</a>
                 <a href="#" class="breadcrumb__link">Мобильные телефона</a>
                 <a href="#" class="breadcrumb__link">Смартфоны</a>
-                <a href="#" class="breadcrumb__link active">Iphone 14pro</a>
+                <a href="#" class="breadcrumb__link">Iphone 14pro</a>
+                <a href="#" class="breadcrumb__link active">Процесс покупки</a>
             </div>
         </div>
         <main class="main">
             <section class="cart">
                 <div class="container">
-                    <div class="cart-wrapper">
-                        <div class="cart-product">
-                            <h1 class="cart-product__title">Способ получения</h1>
-                            <ul class="nav nav-tabs-custom" id="myTab" role="tablist">
-                                <li class="nav-item" role="presentation">
-                                    <button
-                                        class="nav-link active"
-                                        id="delivery-tab"
-                                        data-bs-toggle="tab"
-                                        data-bs-target="#delivery-tab-pane"
-                                        type="button"
-                                        role="tab"
-                                        aria-controls="delivery-tab-pane"
-                                        aria-selected="true"
+                    <form action="" class="form">
+                        <div class="cart-wrapper">
+                            <div class="cart-product">
+                                <h1 class="cart-product__title">Способ получения</h1>
+                                <ul class="nav nav-tabs-custom" id="myTab" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                        <button
+                                            class="nav-link active"
+                                            id="delivery-tab"
+                                            data-bs-toggle="tab"
+                                            data-bs-target="#delivery-tab-pane"
+                                            type="button"
+                                            role="tab"
+                                            aria-controls="delivery-tab-pane"
+                                            aria-selected="true"
+                                        >
+                                            Доставка
+                                        </button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button
+                                            class="nav-link"
+                                            id="pickup-tab"
+                                            data-bs-toggle="tab"
+                                            data-bs-target="#pickup-tab-pane"
+                                            type="button"
+                                            role="tab"
+                                            aria-controls="pickup-tab-pane"
+                                            aria-selected="false"
+                                        >
+                                            Самовывоз
+                                        </button>
+                                    </li>
+                                </ul>
+                                <div class="tab-content" id="myTabContent">
+                                    <div
+                                        class="tab-pane fade show active"
+                                        id="delivery-tab-pane"
+                                        role="tabpanel"
+                                        aria-labelledby="delivery-tab"
+                                        tabindex="0"
                                     >
-                                        Доставка
-                                    </button>
-                                </li>
-                                <li class="nav-item" role="presentation">
-                                    <button
-                                        class="nav-link"
-                                        id="pickup-tab"
-                                        data-bs-toggle="tab"
-                                        data-bs-target="#pickup-tab-pane"
-                                        type="button"
-                                        role="tab"
-                                        aria-controls="pickup-tab-pane"
-                                        aria-selected="false"
-                                    >
-                                        Самовывоз
-                                    </button>
-                                </li>
-                            </ul>
-                            <div class="tab-content" id="myTabContent">
-                                <div
-                                    class="tab-pane fade show active"
-                                    id="delivery-tab-pane"
-                                    role="tabpanel"
-                                    aria-labelledby="delivery-tab"
-                                    tabindex="0"
-                                >
-                                    <form action="" class="form">
                                         <div class="form__item">
                                             <h2 class="form__title">Получатель</h2>
                                             <div class="form__group form__group--3">
@@ -266,482 +267,129 @@
                                                 </div>
                                             </div>
                                         </div>
-                                    </form>
-                                </div>
-                                <div class="tab-pane fade" id="pickup-tab-pane" role="tabpanel" aria-labelledby="pickup-tab" tabindex="0">asd</div>
-                            </div>
-                        </div>
-                        <div class="cart-order">2</div>
-                        <div class="cart-info">
-                            <ul class="nav nav-tabs-custom" id="myTab" role="tablist">
-                                <li class="nav-item" role="presentation">
-                                    <button
-                                        class="nav-link active"
-                                        id="salespeople-tab"
-                                        data-bs-toggle="tab"
-                                        data-bs-target="#salespeople-tab-pane"
-                                        type="button"
-                                        role="tab"
-                                        aria-controls="salespeople-tab-pane"
-                                        aria-selected="true"
-                                    >
-                                        Продавцы
-                                    </button>
-                                </li>
-                                <li class="nav-item" role="presentation">
-                                    <button
-                                        class="nav-link"
-                                        id="description-tab"
-                                        data-bs-toggle="tab"
-                                        data-bs-target="#description-tab-pane"
-                                        type="button"
-                                        role="tab"
-                                        aria-controls="description-tab-pane"
-                                        aria-selected="false"
-                                    >
-                                        Описание товара
-                                    </button>
-                                </li>
-                                <li class="nav-item" role="presentation">
-                                    <button
-                                        class="nav-link"
-                                        id="review-tab"
-                                        data-bs-toggle="tab"
-                                        data-bs-target="#review-tab-pane"
-                                        type="button"
-                                        role="tab"
-                                        aria-controls="review-tab-pane"
-                                        aria-selected="false"
-                                    >
-                                        Отзывы (9)
-                                    </button>
-                                </li>
-                            </ul>
-                            <div class="tab-content" id="myTabContent">
-                                <div
-                                    class="tab-pane fade show active"
-                                    id="salespeople-tab-pane"
-                                    role="tabpanel"
-                                    aria-labelledby="salespeople-tab"
-                                    tabindex="0"
-                                >
-                                    <div class="salespeople-tab">
-                                        <div class="salespeople-tab__item">
-                                            <div class="salespeople-tab__title">Texnodom</div>
-                                            <div class="salespeople-tab__payment">
-                                                <p class="salespeople-tab__payment-title">Рассрочка</p>
-                                                <div class="salespeople-tab__payment-sum">114 573 сум <span>x 18 мес</span></div>
-                                            </div>
-                                            <div class="salespeople-tab__price">
-                                                <p class="salespeople-tab__price-title">Цена</p>
-                                                <div class="salespeople-tab__price-sum">114 573 сум</div>
-                                            </div>
-                                            <button class="salespeople-tab__button button">Посмотреть</button>
-                                        </div>
-                                        <div class="salespeople-tab__item">
-                                            <div class="salespeople-tab__title">Texnodom</div>
-                                            <div class="salespeople-tab__payment">
-                                                <p class="salespeople-tab__payment-title">Рассрочка</p>
-                                                <div class="salespeople-tab__payment-sum">114 573 сум <span>x 18 мес</span></div>
-                                            </div>
-                                            <div class="salespeople-tab__price">
-                                                <p class="salespeople-tab__price-title">Цена</p>
-                                                <div class="salespeople-tab__price-sum">114 573 сум</div>
-                                            </div>
-                                            <button class="salespeople-tab__button button">Посмотреть</button>
-                                        </div>
-                                        <div class="salespeople-tab__item">
-                                            <div class="salespeople-tab__title">Texnodom</div>
-                                            <div class="salespeople-tab__payment">
-                                                <p class="salespeople-tab__payment-title">Рассрочка</p>
-                                                <div class="salespeople-tab__payment-sum">114 573 сум <span>x 18 мес</span></div>
-                                            </div>
-                                            <div class="salespeople-tab__price">
-                                                <p class="salespeople-tab__price-title">Цена</p>
-                                                <div class="salespeople-tab__price-sum">114 573 сум</div>
-                                            </div>
-                                            <button class="salespeople-tab__button button">Посмотреть</button>
-                                        </div>
-                                        <div class="salespeople-tab__item">
-                                            <div class="salespeople-tab__title">Texnodom</div>
-                                            <div class="salespeople-tab__payment">
-                                                <p class="salespeople-tab__payment-title">Рассрочка</p>
-                                                <div class="salespeople-tab__payment-sum">114 573 сум <span>x 18 мес</span></div>
-                                            </div>
-                                            <div class="salespeople-tab__price">
-                                                <p class="salespeople-tab__price-title">Цена</p>
-                                                <div class="salespeople-tab__price-sum">114 573 сум</div>
-                                            </div>
-                                            <button class="salespeople-tab__button button">Посмотреть</button>
-                                        </div>
-                                        <div class="salespeople-tab__item">
-                                            <div class="salespeople-tab__title">Texnodom</div>
-                                            <div class="salespeople-tab__payment">
-                                                <p class="salespeople-tab__payment-title">Рассрочка</p>
-                                                <div class="salespeople-tab__payment-sum">114 573 сум <span>x 18 мес</span></div>
-                                            </div>
-                                            <div class="salespeople-tab__price">
-                                                <p class="salespeople-tab__price-title">Цена</p>
-                                                <div class="salespeople-tab__price-sum">114 573 сум</div>
-                                            </div>
-                                            <button class="salespeople-tab__button button">Посмотреть</button>
-                                        </div>
-                                        <div class="salespeople-tab__item">
-                                            <div class="salespeople-tab__title">Texnodom</div>
-                                            <div class="salespeople-tab__payment">
-                                                <p class="salespeople-tab__payment-title">Рассрочка</p>
-                                                <div class="salespeople-tab__payment-sum">114 573 сум <span>x 18 мес</span></div>
-                                            </div>
-                                            <div class="salespeople-tab__price">
-                                                <p class="salespeople-tab__price-title">Цена</p>
-                                                <div class="salespeople-tab__price-sum">114 573 сум</div>
-                                            </div>
-                                            <button class="salespeople-tab__button button">Посмотреть</button>
-                                        </div>
                                     </div>
-                                </div>
-                                <div class="tab-pane fade" id="description-tab-pane" role="tabpanel" aria-labelledby="description-tab" tabindex="0">
-                                    <div class="description-tab">
-                                        <div class="description-tab__left">
-                                            <div class="description-tab__item">
-                                                <h4 class="description-tab__item-title">Общие Характеристики</h4>
-                                                <div class="description-tab__item-option">
-                                                    <p>Версия ОС</p>
-                                                    <span>iOS16</span>
-                                                </div>
-                                                <div class="description-tab__item-option">
-                                                    <p>Память</p>
-                                                    <span>128 gb</span>
-                                                </div>
-                                                <div class="description-tab__item-option">
-                                                    <p>Диагональ</p>
-                                                    <span>4 дюйма</span>
-                                                </div>
-                                            </div>
-                                            <div class="description-tab__item">
-                                                <h4 class="description-tab__item-title">Общие Характеристики</h4>
-                                                <div class="description-tab__item-option">
-                                                    <p>Версия ОС</p>
-                                                    <span>iOS16</span>
-                                                </div>
-                                                <div class="description-tab__item-option">
-                                                    <p>Память</p>
-                                                    <span>128 gb</span>
-                                                </div>
-                                                <div class="description-tab__item-option">
-                                                    <p>Диагональ</p>
-                                                    <span>4 дюйма</span>
-                                                </div>
-                                            </div>
-                                            <div class="description-tab__item">
-                                                <h4 class="description-tab__item-title">Общие Характеристики</h4>
-                                                <div class="description-tab__item-option">
-                                                    <p>Версия ОС</p>
-                                                    <span>iOS16</span>
-                                                </div>
-                                                <div class="description-tab__item-option">
-                                                    <p>Память</p>
-                                                    <span>128 gb</span>
-                                                </div>
-                                                <div class="description-tab__item-option">
-                                                    <p>Диагональ</p>
-                                                    <span>4 дюйма</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="description-tab__right">
-                                            <div class="description-tab__item">
-                                                <h4 class="description-tab__item-title">Общие Характеристики</h4>
-                                                <div class="description-tab__item-option">
-                                                    <p>Версия ОС</p>
-                                                    <span>iOS16</span>
-                                                </div>
-                                                <div class="description-tab__item-option">
-                                                    <p>Память</p>
-                                                    <span>128 gb</span>
-                                                </div>
-                                                <div class="description-tab__item-option">
-                                                    <p>Диагональ</p>
-                                                    <span>4 дюйма</span>
-                                                </div>
-                                            </div>
-                                            <div class="description-tab__item">
-                                                <h4 class="description-tab__item-title">Общие Характеристики</h4>
-                                                <div class="description-tab__item-option">
-                                                    <p>Версия ОС</p>
-                                                    <span>iOS16</span>
-                                                </div>
-                                                <div class="description-tab__item-option">
-                                                    <p>Память</p>
-                                                    <span>128 gb</span>
-                                                </div>
-                                                <div class="description-tab__item-option">
-                                                    <p>Диагональ</p>
-                                                    <span>4 дюйма</span>
-                                                </div>
-                                            </div>
-                                            <div class="description-tab__item">
-                                                <h4 class="description-tab__item-title">Общие Характеристики</h4>
-                                                <div class="description-tab__item-option">
-                                                    <p>Версия ОС</p>
-                                                    <span>iOS16</span>
-                                                </div>
-                                                <div class="description-tab__item-option">
-                                                    <p>Память</p>
-                                                    <span>128 gb</span>
-                                                </div>
-                                                <div class="description-tab__item-option">
-                                                    <p>Диагональ</p>
-                                                    <span>4 дюйма</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="tab-pane fade" id="review-tab-pane" role="tabpanel" aria-labelledby="review-tab" tabindex="0">
-                                    <div class="review-tab">
-                                        <div class="review-tab__item">
-                                            <div class="review-tab__stars">
-                                                <img src="./assets/img/icons/star.svg" alt="" />
-                                                <img src="./assets/img/icons/star.svg" alt="" />
-                                                <img src="./assets/img/icons/star.svg" alt="" />
-                                                <img src="./assets/img/icons/star.svg" alt="" />
-                                                <img src="./assets/img/icons/star.svg" alt="" />
-                                            </div>
-                                            <div class="review-tab__text text-more">
-                                                Телефон примеум сапасымен таңқаларлық , сыйлық ретінде топ нұсқа. Камерасы (48 мегапиксель) керемет.
-                                                Динамик Айзленд маған ұнады. IOS системасындағы топ сапамен кездесіңіз. Телефон примеум сапасымен
-                                                таңқаларлық , сыйлық ретінде топ нұсқа. Камерасы (48 мегапиксель) керемет. Динамик Айзленд маған
-                                                ұнады. IOS системасындағы топ сапамен кездесіңіз... таңқаларлық , сыйлық ретінде топ нұсқа. Камерасы
-                                                (48 мегапиксель) керемет. Динамик Айзленд маған ұнады. IOS системасындағы топ сапамен кездесіңіз...
-                                            </div>
-                                            <p class="review-tab__text-showall button-show-more">Показать полный отзыв</p>
-                                            <div class="review-tab__name">
-                                                <span>Иван М</span>
-                                                <div class="review-tab__name-dot"></div>
-                                                <span>21.10.2021</span>
-                                            </div>
-                                        </div>
-                                        <div class="review-tab__item">
-                                            <div class="review-tab__stars">
-                                                <img src="./assets/img/icons/star.svg" alt="" />
-                                                <img src="./assets/img/icons/star.svg" alt="" />
-                                                <img src="./assets/img/icons/star.svg" alt="" />
-                                                <img src="./assets/img/icons/star.svg" alt="" />
-                                                <img src="./assets/img/icons/star.svg" alt="" />
-                                            </div>
-                                            <div class="review-tab__text text-more">
-                                                Телефон примеум сапасымен таңқаларлық , сыйлық ретінде топ нұсқа. Камерасы (48 мегапиксель) керемет.
-                                                Динамик Айзленд маған ұнады. IOS системасындағы топ сапамен кездесіңіз. Телефон примеум сапасымен
-                                                таңқаларлық , сыйлық ретінде топ нұсқа. Камерасы (48 мегапиксель) керемет. Динамик Айзленд маған
-                                                ұнады. IOS системасындағы топ сапамен кездесіңіз... таңқаларлық , сыйлық ретінде топ нұсқа. Камерасы
-                                                (48 мегапиксель) керемет. Динамик Айзленд маған ұнады. IOS системасындағы топ сапамен кездесіңіз...
-                                            </div>
-                                            <p class="review-tab__text-showall button-show-more">Показать полный отзыв</p>
-                                            <div class="review-tab__name">
-                                                <span>Иван М</span>
-                                                <div class="review-tab__name-dot"></div>
-                                                <span>21.10.2021</span>
-                                            </div>
-                                        </div>
-                                        <div class="review-tab__item">
-                                            <div class="review-tab__stars">
-                                                <img src="./assets/img/icons/star.svg" alt="" />
-                                                <img src="./assets/img/icons/star.svg" alt="" />
-                                                <img src="./assets/img/icons/star.svg" alt="" />
-                                                <img src="./assets/img/icons/star.svg" alt="" />
-                                                <img src="./assets/img/icons/star.svg" alt="" />
-                                            </div>
-                                            <div class="review-tab__text">
-                                                Телефон примеум сапасымен таңқаларлық , сыйлық ретінде топ нұсқа. Камерасы (48 мегапиксель) керемет.
-                                                Динамик Айзленд маған ұнады. IOS системасындағы топ сапамен кездесіңіз. Телефон примеум сапасымен
-                                                таңқаларлық , сыйлық ретінде топ нұсқа. Камерасы (48 мегапиксель) керемет. Динамик Айзленд маған
-                                                ұнады. IOS системасындағы топ сапамен кездесіңіз...
-                                            </div>
-                                            <div class="review-tab__name">
-                                                <span>Иван М</span>
-                                                <div class="review-tab__name-dot"></div>
-                                                <span>21.10.2021</span>
-                                            </div>
-                                        </div>
+                                    <div class="tab-pane fade" id="pickup-tab-pane" role="tabpanel" aria-labelledby="pickup-tab" tabindex="0">
+                                        asd
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="popular">
-                <div class="container">
-                    <h2 class="popular__title">Похожие товары</h2>
-                    <div class="popular-wrapper">
-                        <div class="popular__item">
-                            <div class="popular__item-image">
-                                <svg
-                                    class="popular__item-heart"
-                                    width="26"
-                                    height="24"
-                                    viewBox="0 0 26 24"
-                                    fill="none"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                >
-                                    <path
-                                        d="M13 23C12 23 1 16 1 7.5C1 3.91015 3.91015 1 7.5 1C9.81577 1 11.8487 2.21102 13 4.03432C14.1513 2.21102 16.1842 1 18.5 1C22.0899 1 25 3.91015 25 7.5C25 16 14 23 13 23Z"
-                                        stroke="#00263A"
-                                        stroke-width="1.5"
-                                        stroke-linejoin="round"
-                                    />
-                                </svg>
-                                <img src="./assets/img/products/iphone.png" alt="" />
-                            </div>
-                            <h2 class="popular__item-title"><a href="">iPhone 14 pro max 256 gb Space gray</a></h2>
-                            <div class="popular__item-review">
-                                <div class="popular__item-stars">
-                                    <img src="./assets/img/icons/star.svg" alt="" />
-                                    <span>4.7</span>
+                            <div class="cart-order">
+                                <div class="cart-order__buy">
+                                    <p class="cart-order__title">Продавец:</p>
+                                    <div class="cart-order__magazine">Texnodon</div>
+                                    <div class="cart-order__product">
+                                        <img src="./assets/img/products/iphone.png" alt="" />
+                                        <div class="cart-order__product-right">
+                                            <h2 class="cart-order__product-right__title">iPhone 14 pro max 256 gb Space gray</h2>
+                                            <p class="cart-order__product-right__oldprice">12 000 000 сум</p>
+                                            <p class="cart-order__product-right__price">10 996 459 сум</p>
+                                        </div>
+                                    </div>
+                                    <button class="button button--primary" disabled>Продолжить</button>
                                 </div>
-                                <a href="#" class="popular__item-reviews">(12 оценок)</a>
                             </div>
-                            <div class="popular__item-credit">от 396 000 сом/мес</div>
-                            <div class="popular__item-sum">
-                                <p class="popular__item-sum__sale">3 810 000 сум</p>
-                                <p class="popular__item-sum__main">3 300 000 сум</p>
-                            </div>
-                        </div>
-                        <div class="popular__item">
-                            <div class="popular__item-image">
-                                <svg
-                                    class="popular__item-heart"
-                                    width="26"
-                                    height="24"
-                                    viewBox="0 0 26 24"
-                                    fill="none"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                >
-                                    <path
-                                        d="M13 23C12 23 1 16 1 7.5C1 3.91015 3.91015 1 7.5 1C9.81577 1 11.8487 2.21102 13 4.03432C14.1513 2.21102 16.1842 1 18.5 1C22.0899 1 25 3.91015 25 7.5C25 16 14 23 13 23Z"
-                                        stroke="#00263A"
-                                        stroke-width="1.5"
-                                        stroke-linejoin="round"
-                                    />
-                                </svg>
-                                <img src="./assets/img/products/iphone.png" alt="" />
-                            </div>
-                            <h2 class="popular__item-title"><a href="">iPhone 14 pro max 256 gb Space gray</a></h2>
-                            <div class="popular__item-review">
-                                <div class="popular__item-stars">
-                                    <img src="./assets/img/icons/star.svg" alt="" />
-                                    <span>4.7</span>
+                            <div class="cart-info">
+                                <h1 class="cart-product__title">Способ оплаты</h1>
+                                <div class="radio-options" id="radio-options-pay">
+                                    <label for="option-1">
+                                        <div class="radio-option">
+                                            <input class="input-option-pay" type="radio" id="option-1" name="options" value="option-1" />
+                                            Рассрочка онлайн
+                                        </div>
+                                    </label>
+                                    <label for="option-2">
+                                        <div class="radio-option">
+                                            <input class="input-option-pay" type="radio" id="option-2" name="options" value="option-2" />
+                                            Click Uzbekistan
+                                        </div>
+                                        <img src="./assets/img/pay/click.png" alt="Option 2" />
+                                    </label>
+                                    <label for="option-3">
+                                        <div class="radio-option">
+                                            <input class="input-option-pay" type="radio" id="option-3" name="options" value="option-3" />
+                                            Payme
+                                        </div>
+                                        <img src="./assets/img/pay/payme.png" alt="Option 3" />
+                                    </label>
+                                    <label for="option-4">
+                                        <div class="radio-option">
+                                            <input class="input-option-pay" type="radio" id="option-4" name="options" value="option-4" />
+                                            Картой онлайн
+                                        </div>
+                                        <img src="./assets/img/pay/visamaster.png" alt="Option 4" />
+                                    </label>
                                 </div>
-                                <a href="#" class="popular__item-reviews">(12 оценок)</a>
-                            </div>
-                            <div class="popular__item-credit">от 396 000 сом/мес</div>
-                            <div class="popular__item-sum">
-                                <p class="popular__item-sum__sale">3 810 000 сум</p>
-                                <p class="popular__item-sum__main">3 300 000 сум</p>
-                            </div>
-                        </div>
 
-                        <div class="popular__item">
-                            <div class="popular__item-image">
-                                <svg
-                                    class="popular__item-heart"
-                                    width="26"
-                                    height="24"
-                                    viewBox="0 0 26 24"
-                                    fill="none"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                >
-                                    <path
-                                        d="M13 23C12 23 1 16 1 7.5C1 3.91015 3.91015 1 7.5 1C9.81577 1 11.8487 2.21102 13 4.03432C14.1513 2.21102 16.1842 1 18.5 1C22.0899 1 25 3.91015 25 7.5C25 16 14 23 13 23Z"
-                                        stroke="#00263A"
-                                        stroke-width="1.5"
-                                        stroke-linejoin="round"
-                                    />
-                                </svg>
-                                <img src="./assets/img/products/iphone.png" alt="" />
-                            </div>
-                            <h2 class="popular__item-title"><a href="">iPhone 14 pro max 256 gb Space gray</a></h2>
-                            <div class="popular__item-review">
-                                <div class="popular__item-stars">
-                                    <img src="./assets/img/icons/star.svg" alt="" />
-                                    <span>4.7</span>
+                                <div class="form__credit">
+                                    <h2 class="form__credit-title">В рассрочку/кредит на:</h2>
+                                    <div class="custom-radio">
+                                        <div class="custom-radio-item">
+                                            <input type="radio" id="item-1" name="items" value="3" class="custom-radio-input" />
+                                            <label for="item-1" class="custom-radio-label">3 месяца</label>
+                                        </div>
+                                        <div class="custom-radio-item">
+                                            <input type="radio" id="item-2" name="items" value="6" class="custom-radio-input" />
+                                            <label for="item-2" class="custom-radio-label">6 месяцев</label>
+                                        </div>
+                                        <div class="custom-radio-item">
+                                            <input type="radio" id="item-3" name="items" value="12" class="custom-radio-input" />
+                                            <label for="item-3" class="custom-radio-label">12 месяцев</label>
+                                        </div>
+                                        <div class="custom-radio-item">
+                                            <input type="radio" id="item-4" name="items" value="24" class="custom-radio-input" />
+                                            <label for="item-4" class="custom-radio-label">24 месяца</label>
+                                        </div>
+                                    </div>
+
+                                    <div class="form__credit-result-wrapper"></div>
                                 </div>
-                                <a href="#" class="popular__item-reviews">(12 оценок)</a>
-                            </div>
-                            <div class="popular__item-credit">от 396 000 сом/мес</div>
-                            <div class="popular__item-sum">
-                                <p class="popular__item-sum__sale">3 810 000 сум</p>
-                                <p class="popular__item-sum__main">3 300 000 сум</p>
+                                <div class="payment-block">
+                                    <div class="form__item">
+                                        <div class="form__group">
+                                            <div class="form-item">
+                                                <input id="card-number" placeholder="0000 0000 0000 0000" type="text" />
+                                                <label for="card-number">Номер карты</label>
+                                            </div>
+                                        </div>
+                                        <div class="form__group">
+                                            <div class="form-item">
+                                                <input id="first-second-name" type="text" />
+                                                <label for="first-second-name">Имя Фамилия владельца</label>
+                                            </div>
+                                        </div>
+                                        <div class="form__group form__group--2">
+                                            <div class="form-item">
+                                                <input id="valid-until" type="text" placeholder="00/00" />
+                                                <label for="valid-until">Действует до</label>
+                                            </div>
+                                            <div class="form-item">
+                                                <input id="cvv" type="text" placeholder="000" />
+                                                <label for="cvv">CVV</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="payment-block__checkboxs">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="termsofUse" required />
+                                            <label class="form-check-label" for="termsofUse"> Я даю согласие с Условиями использования </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="personalData" required />
+                                            <label class="form-check-label" for="personalData">
+                                                Я даю согласие на обработку своих персональных данных указанным образом.
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="distribution" required />
+                                            <label class="form-check-label" for="distribution">
+                                                Я хочу подписаться на e-mail рассылку, чтобы быть в курсе акций и скидок
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="popular__item">
-                            <div class="popular__item-image">
-                                <svg
-                                    class="popular__item-heart"
-                                    width="26"
-                                    height="24"
-                                    viewBox="0 0 26 24"
-                                    fill="none"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                >
-                                    <path
-                                        d="M13 23C12 23 1 16 1 7.5C1 3.91015 3.91015 1 7.5 1C9.81577 1 11.8487 2.21102 13 4.03432C14.1513 2.21102 16.1842 1 18.5 1C22.0899 1 25 3.91015 25 7.5C25 16 14 23 13 23Z"
-                                        stroke="#00263A"
-                                        stroke-width="1.5"
-                                        stroke-linejoin="round"
-                                    />
-                                </svg>
-                                <img src="./assets/img/products/iphone.png" alt="" />
-                            </div>
-                            <h2 class="popular__item-title"><a href="">iPhone 14 pro max 256 gb Space gray</a></h2>
-                            <div class="popular__item-review">
-                                <div class="popular__item-stars">
-                                    <img src="./assets/img/icons/star.svg" alt="" />
-                                    <span>4.7</span>
-                                </div>
-                                <a href="#" class="popular__item-reviews">(12 оценок)</a>
-                            </div>
-                            <div class="popular__item-credit">от 396 000 сом/мес</div>
-                            <div class="popular__item-sum">
-                                <p class="popular__item-sum__sale">3 810 000 сум</p>
-                                <p class="popular__item-sum__main">3 300 000 сум</p>
-                            </div>
-                        </div>
-                        <div class="popular__item">
-                            <div class="popular__item-image">
-                                <svg
-                                    class="popular__item-heart"
-                                    width="26"
-                                    height="24"
-                                    viewBox="0 0 26 24"
-                                    fill="none"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                >
-                                    <path
-                                        d="M13 23C12 23 1 16 1 7.5C1 3.91015 3.91015 1 7.5 1C9.81577 1 11.8487 2.21102 13 4.03432C14.1513 2.21102 16.1842 1 18.5 1C22.0899 1 25 3.91015 25 7.5C25 16 14 23 13 23Z"
-                                        stroke="#00263A"
-                                        stroke-width="1.5"
-                                        stroke-linejoin="round"
-                                    />
-                                </svg>
-                                <img src="./assets/img/products/iphone.png" alt="" />
-                            </div>
-                            <h2 class="popular__item-title"><a href="">iPhone 14 pro max 256 gb Space gray</a></h2>
-                            <div class="popular__item-review">
-                                <div class="popular__item-stars">
-                                    <img src="./assets/img/icons/star.svg" alt="" />
-                                    <span>4.7</span>
-                                </div>
-                                <a href="#" class="popular__item-reviews">(12 оценок)</a>
-                            </div>
-                            <div class="popular__item-credit">от 396 000 сом/мес</div>
-                            <div class="popular__item-sum">
-                                <p class="popular__item-sum__sale">3 810 000 сум</p>
-                                <p class="popular__item-sum__main">3 300 000 сум</p>
-                            </div>
-                        </div>
-                    </div>
+                    </form>
                 </div>
             </section>
         </main>
@@ -825,6 +473,7 @@
         </footer>
 
         <script type="text/javascript" src="./assets/libs/jquery-3.6.3.js"></script>
+        <script type="text/javascript" src="./assets/libs/jquery.mask.min.js"></script>
         <script type="text/javascript" src="./assets/libs/bootstrap/bootstrap.min.js"></script>
         <script type="text/javascript" src="./assets/libs/slick/slick.min.js"></script>
         <script type="text/javascript" src="./assets/js/index.js"></script>
