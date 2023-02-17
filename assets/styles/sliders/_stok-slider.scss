@@ -1,0 +1,117 @@
+.stock-slider,
+.last-view-slider {
+    .slick-slide {
+        // max-width: 27.3rem;
+        // margin: 0 auto;
+        // margin: 0 1.6rem;
+    }
+
+    &__item {
+        max-width: 27.3rem;
+        // margin: 0 auto;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    &__title {
+        margin-top: 0.8rem;
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+        color: $logo-black;
+        cursor: pointer;
+        transition: color .2s;
+
+        &:hover {
+            color: $text-secondary;
+        }
+    }
+
+    &__date {
+        margin-top: 0.8rem;
+        font-size: 1.4rem;
+        line-height: 2rem;
+        color: $logo-black;
+        margin-bottom: 0;
+    }
+
+    .slick-list {
+        padding-left: 0 !important;
+    }
+
+    .slick-prev,
+    .slick-next {
+        z-index: 1;
+        width: 4.4rem;
+        height: 4.4rem;
+
+        &::before {
+            opacity: 1;
+        }
+    }
+
+    .slick-prev {
+        left: -2.2rem;
+        top: 9rem;
+
+        &:hover {
+            &::before {
+                background: $white url(../img/stok-slider/arrow-left-green.svg) no-repeat center;
+
+            }
+        }
+
+        &::before {
+            content: '';
+            transition: 0.2s;
+            display: block;
+            background: $white url(../img/stok-slider/arrow-left.svg) no-repeat center;
+            background-size: contain;
+            background-size: 1.3rem;
+            width: 4.4rem;
+            height: 4.4rem;
+            border-radius: 50%;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+
+        }
+    }
+
+    .slick-next {
+        right: -2.2rem;
+        top: 9rem;
+
+        &:hover {
+            &::before {
+                background: $white url(../img/stok-slider/arrow-left-green.svg) no-repeat center;
+                transform: rotate(180deg);
+            }
+        }
+
+        &::before {
+            content: '';
+            transition: 0.2s;
+            display: block;
+            background: $white url(../img/stok-slider/arrow-left.svg) no-repeat center;
+            background-size: 1.3rem;
+            transform: rotate(180deg);
+            width: 4.4rem;
+            height: 4.4rem;
+            border-radius: 50%;
+
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+
+
+        }
+    }
+}
+
+.last-view-slider {
+    .slick-prev {
+        top: 50%;
+    }
+
+    .slick-next {
+        top: 50%;
+    }
+}

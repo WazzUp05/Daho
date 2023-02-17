@@ -26,7 +26,7 @@
     &:disabled {
         background: $gray-03;
         color: $gray-30;
-        cursor: none;
+        cursor: auto;
     }
 
     &--secondary {

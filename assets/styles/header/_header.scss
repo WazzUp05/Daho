@@ -1,18 +1,30 @@
 .header {
     padding: 1rem 0 2rem 0;
     background-color: $gray-90;
+
     &__header {
         display: flex;
         align-items: center;
-        justify-content: space-between;
         margin-bottom: 2rem;
+        border-bottom: 1px solid #DFDEE2;
+        padding-bottom: 1.2rem;
     }
+
+    &__nav {
+        margin-left: auto;
+        padding-right: 2.4rem;
+        margin-right: 2.4rem;
+        border-right: 1px solid #fff;
+    }
+
     &__location {
         display: flex;
         align-items: center;
+
         svg {
-            margin-right: 1.125rem;
+            margin-right: 8px;
         }
+
         span {
             color: $white;
             font-weight: 500;
@@ -20,47 +32,65 @@
             line-height: 2.4rem;
         }
     }
+
     &__lang {
         display: flex;
         align-items: center;
         margin-right: 8px;
+
         span {
             font-weight: 500;
             font-size: 1.4rem;
-            line-height: 2.4rem;
+            line-height: 1.6rem;
             margin-left: 6px;
             color: $white;
         }
     }
+
     &__link {
         color: $white;
         text-decoration: none;
         margin-right: 2.4rem;
-        font-weight: 400;
-        font-size: 1.6rem;
-        line-height: 2.4rem;
+        font-weight: 500;
+        font-size: 1.4rem;
+        line-height: 1.6rem;
+
+        &:hover {
+            opacity: 0.8;
+        }
+
         &:last-child {
             margin-right: 0;
         }
     }
+
     &__content {
         display: flex;
         align-items: center;
     }
+
     .catalog-button {
-        margin-right: 2rem;
+        margin-right: 1.6rem;
+        min-width: 17.6rem;
         font-weight: 500;
-        font-size: 1.6rem;
-        line-height: 2.4rem;
+        font-size: 1.4rem;
+        line-height: 1.6rem;
         padding: 1.2rem 1.6rem;
+
+        svg {
+            position: relative;
+            top: 1px;
+            margin-right: 4px;
+        }
     }
+
     &__logo {
         display: flex;
         align-items: center;
-        margin-right: 2rem;
-        img {
-            width: 10.7rem;
-        }
+        margin-right: 2.6rem;
+        // img {
+        //     width: 10.7rem;
+        // }
     }
 
     &__search {
@@ -68,52 +98,98 @@
         max-width: 66.4rem;
         margin-right: 2rem;
         position: relative;
+        display: flex;
+        align-items: center;
+
         &-logo {
             position: absolute;
-            left: 12px;
+            left: 1.6rem;
             top: 50%;
             transform: translateY(-50%);
         }
+
+        &-clear {
+            display: none;
+            position: absolute;
+            right: 13.6rem;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+            transition: .2s;
+
+            &:hover {
+                opacity: 0.8;
+            }
+        }
+
         input {
-            padding: 1.2rem 1.6rem;
-            padding-left: 5rem;
+            padding: 1.2rem 5rem;
+
             height: 48px;
             width: 100%;
-            background: $white;
-            border-radius: 8px;
-            border: 1px solid $gray-10;
+            background: $brand-black;
+            border: 2px solid #BF9959;
+            border-radius: 8px 0 0 8px;
             font-size: 1.6rem;
-            line-height: 2.4rem;
+            line-height: 2rem;
+            color: $white;
+
+            &::placeholder {
+                color: #969393;
+            }
+
+            // &:hover {
+            //     box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.04);
+            // }
+        }
+
+        &-button {
+            background: $brand-primary;
+            border-radius: 0px 8px 8px 0px;
+            padding: 1.4rem 3.4rem;
+            height: 48px;
+            font-size: 1.6rem;
+            line-height: 2rem;
+            color: $white;
+            border: none;
+            transition: .2s;
+
             &:hover {
-                box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.04);
-                border-radius: 8px;
+                background: #ac8a50;
             }
         }
     }
+
     &__buttons {
         display: flex;
         align-items: center;
+
     }
+
     &__button {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 6.4rem;
+        width: 7.6rem;
         text-decoration: none;
-        margin-right: 2.4rem;
+        margin-right: 1.2rem;
+
         span {
-            height: 1.6rem;
+            height: 1.5rem;
             font-weight: 400;
             font-size: 1.2rem;
+            line-height: 1.5rem;
             line-height: initial;
             color: $white;
         }
+
         svg {
-            width: 3rem;
-            height: 3rem;
-            margin-bottom: 4px;
+            width: 2.4rem;
+            height: 2.4rem;
+            // margin-bottom: 4px;
         }
+
         &:last-child {
             margin-right: 0;
         }

@@ -2,7 +2,6 @@
     &-wrapper {
         display: grid;
         grid-template-columns: 1fr 36.9rem;
-
         grid-column-gap: 2rem;
         grid-row-gap: 1rem;
 
@@ -31,6 +30,7 @@
         height: fit-content;
         position: sticky;
         top: 1rem;
+        margin-bottom: 1rem;
 
         @media (max-width: 1024px) {
             position: relative;

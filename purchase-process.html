@@ -198,15 +198,15 @@
                                             <h2 class="form__title">Получатель</h2>
                                             <div class="form__group form__group--3">
                                                 <div class="form-item">
-                                                    <input id="first-name" type="text" />
+                                                    <input required id="first-name" name="firstname" type="text" />
                                                     <label for="first-name">Имя</label>
                                                 </div>
                                                 <div class="form-item">
-                                                    <input id="last-name" type="text" />
+                                                    <input required id="last-name" type="text" />
                                                     <label for="last-name">Фамилия</label>
                                                 </div>
                                                 <div class="form-item">
-                                                    <input id="phone" type="text" />
+                                                    <input required id="phone" type="phone" />
                                                     <label for="phone">Номер телефона</label>
                                                 </div>
                                             </div>
@@ -215,7 +215,7 @@
                                             <h2 class="form__title">Адрес</h2>
                                             <div class="form__group form__group--2">
                                                 <div class="form-item">
-                                                    <input id="city" type="text" />
+                                                    <input required id="city" type="text" />
                                                     <label for="city">Город</label>
                                                 </div>
                                                 <div class="form-item">
@@ -250,7 +250,7 @@
                                             <h2 class="form__title">Дата и время доставки</h2>
                                             <div class="form__group form__group--2">
                                                 <div class="form-item">
-                                                    <select id="date">
+                                                    <select required id="date">
                                                         <option selected>Выберите дату</option>
                                                         <option value="2">3 февраля</option>
                                                         <option value="3">4 февраля</option>
@@ -258,7 +258,7 @@
                                                     </select>
                                                 </div>
                                                 <div class="form-item">
-                                                    <select id="time">
+                                                    <select required id="time">
                                                         <option selected>Выберите время</option>
                                                         <option value="1">09:00 - 12:00</option>
                                                         <option value="2">12:00 - 14:00</option>
@@ -285,7 +285,7 @@
                                             <p class="cart-order__product-right__price">10 996 459 сум</p>
                                         </div>
                                     </div>
-                                    <button class="button button--primary" disabled>Продолжить</button>
+                                    <button class="button button--primary" type="submit">Продолжить</button>
                                 </div>
                             </div>
                             <div class="cart-info">
@@ -347,23 +347,23 @@
                                     <div class="form__item">
                                         <div class="form__group">
                                             <div class="form-item">
-                                                <input id="card-number" placeholder="0000 0000 0000 0000" type="text" />
+                                                <input required id="card-number" placeholder="0000 0000 0000 0000" type="text" />
                                                 <label for="card-number">Номер карты</label>
                                             </div>
                                         </div>
                                         <div class="form__group">
                                             <div class="form-item">
-                                                <input id="first-second-name" type="text" />
+                                                <input required id="first-second-name" type="text" />
                                                 <label for="first-second-name">Имя Фамилия владельца</label>
                                             </div>
                                         </div>
                                         <div class="form__group form__group--2">
                                             <div class="form-item">
-                                                <input id="valid-until" type="text" placeholder="00/00" />
+                                                <input required id="valid-until" type="text" placeholder="00/00" />
                                                 <label for="valid-until">Действует до</label>
                                             </div>
                                             <div class="form-item">
-                                                <input id="cvv" type="text" placeholder="000" />
+                                                <input required id="cvv" type="text" placeholder="000" />
                                                 <label for="cvv">CVV</label>
                                             </div>
                                         </div>
