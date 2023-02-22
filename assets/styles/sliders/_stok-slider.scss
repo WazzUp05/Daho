@@ -17,6 +17,7 @@
 
     &__title {
         margin-top: 0.8rem;
+        margin-bottom: 0;
         font-size: 1.6rem;
         line-height: 2.4rem;
         color: $logo-black;
@@ -113,5 +114,39 @@
 
     .slick-next {
         top: 50%;
+    }
+}
+
+@media (max-width: 767px) {
+
+    // /* the slides */
+    // .slick-slide {
+    //     // margin: 0 4px;
+    //     width: 21rem !important;
+    // }
+
+    // /* the parent */
+    // .slick-list {
+    //     margin: 0 -4px;
+    // }
+
+    .stock-slider,
+    .last-view-slider {
+        &__item {
+            // max-width: 21rem;
+        }
+
+        // &__title {
+        //     margin-top: 0.6rem;
+        //     font-size: 1.4rem;
+        //     line-height: 1.8rem;
+        // }
+
+    }
+
+    .last-view-slider {
+        .slick-list {
+            padding-right: 2rem !important;
+        }
     }
 }
