@@ -22,6 +22,11 @@
         display: flex;
         align-items: center;
         justify-content: center;
+
+        @media (max-width: 767px) {
+            left: -0.5rem;
+            top: -1.6rem;
+        }
     }
 
     &__title {
