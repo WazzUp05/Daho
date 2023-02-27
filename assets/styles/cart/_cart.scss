@@ -146,6 +146,10 @@
             margin-bottom: 5.6rem;
             gap: 2.4rem;
 
+            @media (max-width: 767px) {
+                display: none;
+            }
+
             p {
                 margin-bottom: 0;
             }

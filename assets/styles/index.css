@@ -664,6 +664,10 @@ input {
   border: none;
   margin-bottom: 1.6rem;
 }
+.accordion-footer .accordion-button:not(.collapsed) {
+  background-color: #F4F4F4;
+  border: none;
+}
 .accordion-footer .accordion-button {
   background-color: #F4F4F4;
   padding: 0;
@@ -1492,6 +1496,11 @@ input {
   align-items: center;
   margin-bottom: 5.6rem;
   gap: 2.4rem;
+}
+@media (max-width: 767px) {
+  .cart-product__subtitle {
+    display: none;
+  }
 }
 .cart-product__subtitle p {
   margin-bottom: 0;

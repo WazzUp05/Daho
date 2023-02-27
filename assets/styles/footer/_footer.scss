@@ -251,6 +251,11 @@
 
     }
 
+    .accordion-button:not(.collapsed) {
+        background-color: #F4F4F4;
+        border: none;
+    }
+
     .accordion-button {
         background-color: #F4F4F4;
         padding: 0;
