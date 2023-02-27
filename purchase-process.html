@@ -395,79 +395,134 @@
         </main>
         <footer class="footer">
             <div class="container">
-                <div class="footer__content">
-                    <div class="footer__item">
-                        <h2 class="footer__title">Интернет-магазин</h2>
-                        <a href="#" class="footer__link">Акции</a>
-                        <a href="#" class="footer__link">Новости</a>
-                        <a href="#" class="footer__link">Подарочные карты</a>
-                        <a href="#" class="footer__link">Товары в кредит</a>
-                        <div class="footer__partner">
-                            <img src="./assets/img/icons/surf.png" alt="" />
-                            <h2>Продавай вместе с нами</h2>
-                            <button class="button button--secondary button--m">Стать партнером</button>
+                <div class="footer__content footer-mobile">
+                    <div class="accordion accordion-footer" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button
+                                    class="accordion-button collapsed"
+                                    type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne"
+                                    aria-expanded="false"
+                                    aria-controls="collapseOne"
+                                >
+                                    Информация
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <a href="#" class="footer__link">О нас</a>
+                                    <a href="#" class="footer__link">Условия использования</a>
+                                    <a href="#" class="footer__link">Оплата и доставка</a>
+                                    <a href="#" class="footer__link">Как стать инвестором </a>
+                                    <a href="#" class="footer__link">Как заказать</a>
+                                    <a href="#" class="footer__link">Вопросы и ответы</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button
+                                    class="accordion-button collapsed"
+                                    type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo"
+                                    aria-expanded="false"
+                                    aria-controls="collapseTwo"
+                                >
+                                    Сервис и поддержка
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <a href="#" class="footer__link">Бренды</a>
+                                    <a href="#" class="footer__link">Оплата</a>
+                                    <a href="#" class="footer__link">Доставка</a>
+                                    <a href="#" class="footer__link">Обратная связь</a>
+                                    <a href="#" class="footer__link">Контакты</a>
+                                    <a href="#" class="footer__link">FAQs</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="footer__item">
-                        <h2 class="footer__title">Комания «Daho Market»</h2>
-                        <a href="#" class="footer__link">О компании</a>
-                        <a href="#" class="footer__link">Забота о клиентах</a>
-                        <a href="#" class="footer__link">Контакты</a>
-                        <a href="#" class="footer__link">Наши магазины</a>
-                        <a href="#" class="footer__link">Партнерам</a>
+                    <p class="footer-mobile__app-title">Мобильные устройства</p>
+                    <div class="footer-mobile__apps">
+                        <a href=""><img class="img-fluid" src="./assets/img/footer/android.png" alt="" /></a>
+                        <a href=""><img class="img-fluid" src="./assets/img/footer/appstore.png" alt="" /></a>
                     </div>
                     <div class="footer__item">
-                        <h2 class="footer__title">Помощь покупателю</h2>
-                        <a href="#" class="footer__link">Как сделать заказ</a>
-                        <a href="#" class="footer__link">Условия установки кондиционеров</a>
-                        <a href="#" class="footer__link">Доставка и оплата</a>
-                        <a href="#" class="footer__link">Условия возврата и обмена</a>
-                        <a href="#" class="footer__link">Умный покупатель</a>
-                        <a href="#" class="footer__link">Премиум товары</a>
-                        <a href="#" class="footer__link">Все бредны</a>
-                        <a href="#" class="footer__link">Сборка игровых компьютеров</a>
-                        <a href="#" class="footer__link">Правила розыгрышей</a>
-                        <div class="footer__line">
-                            <a href="tel:1717">1717</a>
-                            <p>Горячая линия 08:00 до 00:00</p>
-                        </div>
-                    </div>
-                    <div class="footer__item">
-                        <h2 class="footer__title">Будьте в курсе</h2>
-                        <p class="footer__desc">Подпишитесь на последние обновления и узнавайте о новинках и специальных предложениях первыми</p>
                         <h2 class="footer__title">Мы в соцсетях</h2>
+
                         <div class="footer__soc">
                             <a href="" target="_blank" class="footer__soc-item">
-                                <img src="./assets/img/icons/telegram.svg" alt="" />
+                                <img src="./assets/img/icons/soc/fb.svg" alt="" />
                             </a>
                             <a href="" target="_blank" class="footer__soc-item">
-                                <img src="./assets/img/icons/whatsapp.svg" alt="" />
+                                <img src="./assets/img/icons/soc/inst.svg" alt="" />
                             </a>
                             <a href="" target="_blank" class="footer__soc-item">
-                                <img src="./assets/img/icons/inst.svg" alt="" />
+                                <img src="./assets/img/icons/soc/twitter.svg" alt="" />
                             </a>
                             <a href="" target="_blank" class="footer__soc-item">
-                                <img src="./assets/img/icons/youtube.svg" alt="" />
+                                <img src="./assets/img/icons/soc/google.svg" alt="" />
+                            </a>
+                        </div>
+                    </div>
+                    <a href="" class="footer-mobile__link">Соглашение о конфиденциальности</a>
+                    <a href="" class="footer-mobile__link">Пользовательское соглашение</a>
+                </div>
+                <div class="footer__content footer-desktop">
+                    <div class="footer__item">
+                        <h2 class="footer__title">Информация</h2>
+                        <a href="#" class="footer__link">О нас</a>
+                        <a href="#" class="footer__link">Условия использования</a>
+                        <a href="#" class="footer__link">Оплата и доставка</a>
+                        <a href="#" class="footer__link">Как стать инвестором </a>
+                        <a href="#" class="footer__link">Как заказать</a>
+                        <a href="#" class="footer__link">Вопросы и ответы</a>
+                    </div>
+                    <div class="footer__item">
+                        <h2 class="footer__title">Сервис и поддержка</h2>
+                        <a href="#" class="footer__link">Бренды</a>
+                        <a href="#" class="footer__link">Оплата</a>
+                        <a href="#" class="footer__link">Доставка</a>
+                        <a href="#" class="footer__link">Обратная связь</a>
+                        <a href="#" class="footer__link">Контакты</a>
+                        <a href="#" class="footer__link">FAQs</a>
+                    </div>
+                    <div class="footer__item">
+                        <p class="footer__text">Телефон: <a href="tel:+998909488684">+99890 948-86-84</a></p>
+                        <p class="footer__text">Эл.почта: <a href="mailto:dahomarket@gmail.com">dahomarket@gmail.com</a></p>
+
+                        <p class="footer__text">Адрес: <br /><span>Республика Узбекистан, город Ташкент, Юнусабад район, Шарафа Рашидова 40</span></p>
+                    </div>
+                    <div class="footer__item">
+                        <h2 class="footer__title">Мы в соцсетях</h2>
+
+                        <div class="footer__soc">
+                            <a href="" target="_blank" class="footer__soc-item">
+                                <img src="./assets/img/icons/soc/fb.svg" alt="" />
                             </a>
                             <a href="" target="_blank" class="footer__soc-item">
-                                <img src="./assets/img/icons/fb.svg" alt="" />
+                                <img src="./assets/img/icons/soc/inst.svg" alt="" />
                             </a>
                             <a href="" target="_blank" class="footer__soc-item">
-                                <img src="./assets/img/icons/vk.svg" alt="" />
+                                <img src="./assets/img/icons/soc/twitter.svg" alt="" />
+                            </a>
+                            <a href="" target="_blank" class="footer__soc-item">
+                                <img src="./assets/img/icons/soc/google.svg" alt="" />
                             </a>
                         </div>
                     </div>
                 </div>
-                <hr />
+                <hr class="d-none d-lg-block" />
                 <div class="footer__footer">
-                    <div class="footer__footer-left">
-                        <p>Мы принимаем: <img src="./assets/img/icons/visa.png" alt="" /> <img src="./assets/img/icons/mastercard.png" alt="" /></p>
-                        <a href="#" target="_blank">Официальное уведомление</a>
-                        <a href="#" target="_blank">Политика конфиденциальности</a>
-                    </div>
-                    <div class="footer__footer-right">
-                        <p>© АО «Daho Market» 2002—2022</p>
-                    </div>
+                    <p class="d-block d-lg-none">
+                        «2023© ООО «DahoMarket». ИНН 123456789.<br />
+                        Все права защищены»
+                    </p>
+                    <p class="d-none d-lg-block">2023 DahoMarket. Все права защищены</p>
                 </div>
             </div>
         </footer>

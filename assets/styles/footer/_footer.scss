@@ -165,6 +165,11 @@
             text-decoration: none;
             margin-right: 1.6rem;
 
+            img {
+                width: 3.2rem;
+                height: 3.2rem;
+            }
+
             &:hover {
                 opacity: 0.8;
             }
@@ -173,5 +178,107 @@
                 margin-right: 0;
             }
         }
+    }
+}
+
+@media (max-width: 767px) {
+    .footer {
+        padding: 3.2rem 0 2.4rem 0;
+
+        &__soc {
+            margin-bottom: 3.2rem;
+        }
+
+        &__footer {
+            text-align: center;
+
+            p {
+                width: 100%;
+                font-size: 1.1rem;
+                line-height: 1.4rem;
+                color: #4D4E59;
+            }
+        }
+    }
+}
+
+.footer-desktop {
+    display: grid;
+
+    @media (max-width: 767px) {
+        display: none;
+    }
+}
+
+.footer-mobile {
+    display: none;
+
+    &__app-title {
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+        font-weight: 600;
+        color: $logo-black;
+        margin: 1.6rem 0;
+
+    }
+
+    &__apps {
+        display: flex;
+        align-items: center;
+        gap: 1.2rem;
+        margin-bottom: 1.6rem;
+    }
+
+    &__link {
+        font-size: 1.4rem;
+        line-height: 1.8rem;
+        text-align: center;
+        color: #1F1F26;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 1.2rem;
+    }
+
+    @media (max-width: 767px) {
+        display: block;
+    }
+}
+
+.accordion-footer {
+    .accordion-item {
+        border: none;
+        margin-bottom: 1.6rem;
+
+    }
+
+    .accordion-button {
+        background-color: #F4F4F4;
+        padding: 0;
+        font-size: 1.4rem;
+        line-height: 2.1rem;
+        font-weight: 500;
+        color: #00263A;
+        border: none;
+        box-shadow: none;
+
+        &::after {
+            background-color: #fff;
+            border-radius: 50%;
+            width: 3.2rem;
+            height: 3.2rem;
+            background-position: center;
+        }
+
+        &:focus {
+            box-shadow: none;
+        }
+
+        // border: none;
+    }
+
+    .accordion-body {
+        background-color: #F4F4F4;
+        padding: 0;
+        padding-bottom: 1rem;
     }
 }

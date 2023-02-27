@@ -5,6 +5,15 @@
     grid-row-gap: 8px;
 }
 
+.page {
+    &-title {
+        font-size: 3.4rem;
+        line-height: 4rem;
+        font-weight: 600;
+        margin-bottom: 4rem;
+    }
+}
+
 .discounts {
     margin: 2.4rem 0;
 
@@ -427,18 +436,18 @@
         margin-bottom: 1.2rem;
     }
 
-    &-reviews {
-        font-weight: 400;
-        font-size: 1.4rem;
-        line-height: 2.4rem;
-        color: #909090;
-        transition: color 0.2s;
-        text-decoration: none;
+    // &-reviews {
+    //     font-weight: 400;
+    //     font-size: 1.4rem;
+    //     line-height: 2.4rem;
+    //     color: #909090;
+    //     transition: color 0.2s;
+    //     text-decoration: none;
 
-        &:hover {
-            color: $gray-55;
-        }
-    }
+    //     &:hover {
+    //         color: $gray-55;
+    //     }
+    // }
 
     &-stars {
         display: flex;
@@ -661,7 +670,7 @@
         }
 
         &__item {
-            padding: 2rem 0.8rem 0.8rem 0.8rem;
+            padding: 2.5rem 0.8rem 0.8rem 0.8rem;
 
             &:nth-child(even) {
                 border-right: none;
@@ -695,11 +704,12 @@
 
             &-credit {
                 margin-bottom: 0.95rem;
-                padding: 0 0.63rem;
+                padding: 0;
 
                 span {
                     font-size: 1rem;
                     line-height: 1.2rem;
+                    padding: 1.58px 6.33px;
                 }
 
                 p {

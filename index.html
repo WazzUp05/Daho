@@ -1680,7 +1680,84 @@
 
         <footer class="footer">
             <div class="container">
-                <div class="footer__content">
+                <div class="footer__content footer-mobile">
+                    <div class="accordion accordion-footer" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button
+                                    class="accordion-button collapsed"
+                                    type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne"
+                                    aria-expanded="false"
+                                    aria-controls="collapseOne"
+                                >
+                                    Информация
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <a href="#" class="footer__link">О нас</a>
+                                    <a href="#" class="footer__link">Условия использования</a>
+                                    <a href="#" class="footer__link">Оплата и доставка</a>
+                                    <a href="#" class="footer__link">Как стать инвестором </a>
+                                    <a href="#" class="footer__link">Как заказать</a>
+                                    <a href="#" class="footer__link">Вопросы и ответы</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button
+                                    class="accordion-button collapsed"
+                                    type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo"
+                                    aria-expanded="false"
+                                    aria-controls="collapseTwo"
+                                >
+                                    Сервис и поддержка
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <a href="#" class="footer__link">Бренды</a>
+                                    <a href="#" class="footer__link">Оплата</a>
+                                    <a href="#" class="footer__link">Доставка</a>
+                                    <a href="#" class="footer__link">Обратная связь</a>
+                                    <a href="#" class="footer__link">Контакты</a>
+                                    <a href="#" class="footer__link">FAQs</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="footer-mobile__app-title">Мобильные устройства</p>
+                    <div class="footer-mobile__apps">
+                        <a href=""><img class="img-fluid" src="./assets/img/footer/android.png" alt="" /></a>
+                        <a href=""><img class="img-fluid" src="./assets/img/footer/appstore.png" alt="" /></a>
+                    </div>
+                    <div class="footer__item">
+                        <h2 class="footer__title">Мы в соцсетях</h2>
+
+                        <div class="footer__soc">
+                            <a href="" target="_blank" class="footer__soc-item">
+                                <img src="./assets/img/icons/soc/fb.svg" alt="" />
+                            </a>
+                            <a href="" target="_blank" class="footer__soc-item">
+                                <img src="./assets/img/icons/soc/inst.svg" alt="" />
+                            </a>
+                            <a href="" target="_blank" class="footer__soc-item">
+                                <img src="./assets/img/icons/soc/twitter.svg" alt="" />
+                            </a>
+                            <a href="" target="_blank" class="footer__soc-item">
+                                <img src="./assets/img/icons/soc/google.svg" alt="" />
+                            </a>
+                        </div>
+                    </div>
+                    <a href="" class="footer-mobile__link">Соглашение о конфиденциальности</a>
+                    <a href="" class="footer-mobile__link">Пользовательское соглашение</a>
+                </div>
+                <div class="footer__content footer-desktop">
                     <div class="footer__item">
                         <h2 class="footer__title">Информация</h2>
                         <a href="#" class="footer__link">О нас</a>
@@ -1724,9 +1801,13 @@
                         </div>
                     </div>
                 </div>
-                <hr />
+                <hr class="d-none d-lg-block" />
                 <div class="footer__footer">
-                    <p>2023 DahoMarket. Все права защищены</p>
+                    <p class="d-block d-lg-none">
+                        «2023© ООО «DahoMarket». ИНН 123456789.<br />
+                        Все права защищены»
+                    </p>
+                    <p class="d-none d-lg-block">2023 DahoMarket. Все права защищены</p>
                 </div>
             </div>
         </footer>

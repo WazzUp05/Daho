@@ -1,0 +1,120 @@
+.login {
+    margin-top: 4rem;
+
+    &__wrapper {
+        position: relative;
+        padding: 4rem 3.2rem;
+        margin: 0 auto;
+        max-width: 42rem;
+        border: 1px solid #F0F0F0;
+        border-radius: 8px;
+    }
+
+    &__back {
+        position: absolute;
+        left: -2.5rem;
+        top: 1.6rem;
+        width: 5.2rem;
+        height: 5.2rem;
+        background: #fff;
+        box-shadow: 0px 0px 20px rgba(0, 51, 129, 0.1);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__title {
+        font-size: 2.4rem;
+        line-height: 3.2rem;
+        font-weight: 700;
+        text-align: center;
+        color: #0D0D0D;
+        margin-bottom: 4rem;
+    }
+
+    &__recover {
+        margin-top: 4px;
+        font-size: 1.4rem;
+        line-height: 2rem;
+        color: #3959FE;
+        display: flex;
+        justify-content: flex-end;
+
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+
+    &__link {
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+        color: #0D0D0D;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 1.6rem;
+
+        a {
+            color: #3959FE;
+            margin-left: 1.6rem;
+            display: block;
+
+            &:hover {
+                opacity: 0.8;
+            }
+        }
+    }
+}
+
+
+
+.form-group {
+    margin-top: 2.4rem;
+
+    label {
+        font-size: 1.4rem;
+        line-height: 2rem;
+        color: #0D0D0D;
+        margin-bottom: 4px;
+    }
+
+    input {
+        padding: 1.4rem 1.6rem;
+        font-size: 1.4rem;
+        line-height: 2rem;
+
+        &::placeholder {
+            color: #919191;
+            font-size: 1.4rem;
+            line-height: 2rem;
+        }
+    }
+}
+
+
+.button-login {
+    padding: 1.2rem;
+    border-radius: 4px;
+    width: 100%;
+    margin-bottom: 1.6rem;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    margin-top: 2.4rem;
+}
+
+.button-register {
+    background: transparent;
+    padding: 1.2rem;
+    border-radius: 4px;
+    width: 100%;
+    color: $logo-black;
+    font-size: 1.6rem;
+    border: 1px solid #CDCDCD;
+    line-height: 2.4rem;
+
+    &:hover {
+        color: #fff;
+    }
+}

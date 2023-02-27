@@ -10,9 +10,15 @@
 @import './sliders/sliders';
 @import './main/main';
 @import './cart/cart';
+@import './pages/cards';
+@import './pages/login';
 @import './components/form';
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+:root {
+    --bs-font-sans-serif: 'Inter', system-ui, Tahoma, sans-serif !important;
+}
 
 body {
     background-color: $white !important;
@@ -52,7 +58,7 @@ body {
 }
 
 .breadcrumb {
-    margin: 2rem 0;
+    margin: 3.2rem 0;
 
     &__link {
         font-size: 1.4rem;
@@ -83,35 +89,68 @@ body {
             }
         }
 
-        &.active {
-            color: $brand-black;
-        }
+        // &.active {
+        //     color: $brand-black;
+        // }
     }
 }
 
 .nav-tabs-custom {
+    border-bottom: 3px solid #F0F0F0;
+
+    .nav-item {
+        &:last-child {
+            .nav-link {
+                margin-right: 0;
+            }
+        }
+    }
+
     .nav-link {
-        color: $brand-black;
+        color: #BDBDBD;
         background: transparent;
         border: none;
-        padding: 1rem;
-        font-size: 1.6rem;
+        padding: 0;
+        padding-bottom: 8px;
+        font-weight: 600;
+        font-size: 2rem;
         line-height: 2.4rem;
         transition: all 0.2s;
-        border-bottom: 1px solid transparent;
+        border-bottom: 3px solid transparent;
+        margin-right: 4.8rem;
+        position: relative;
+        top: 3px;
+
+        @media (max-width: 767px) {
+            font-size: 1.4rem;
+            font-weight: 700;
+            margin-right: 2.3rem;
+        }
 
         &:hover {
-            color: $brand-black;
-            border-bottom: 1px solid $brand-black;
+            color: $logo-black;
+            border-bottom: 3px solid $brand-primary;
         }
 
         &.active {
-            color: $brand-primary;
+            color: $logo-black;
             background-color: transparent;
             border: none;
-            border-bottom: 1px solid $brand-primary;
+            border-bottom: 3px solid $brand-primary;
         }
     }
+}
+
+.tab-content-custom {
+    .tab-pane {
+        padding-top: 3.2rem;
+
+        @media (max-width: 767px) {
+            padding-top: 1.6rem;
+        }
+    }
+
+    margin-bottom: 7.2rem;
 }
 
 .text-more {
