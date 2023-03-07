@@ -346,4 +346,12 @@ $(document).ready(function () {
         searchInput.val('');
         clearInput.hide();
     });
+
+    // Открытие меню
+    $('.catalog-button').on('click', function () {
+        $('.desktop-menu').toggleClass('active');
+        if ($('.desktop-menu').hasClass('active')) {
+            $('body').css('overflow-y', 'hidden');
+        } else $('body').css('overflow-y', 'auto');
+    });
 });

@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Daho</title>
+        <link rel="stylesheet" href="./assets/libs/bootstrap/bootstrap.min.css" />
+        <link rel="stylesheet" href="./assets/styles/index.css" />
+        <link rel="stylesheet" href="./assets/libs/slick/slick.css" />
+        <link rel="stylesheet" href="./assets/libs/slick/slick-theme.css" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+            crossorigin="anonymous"
+        />
+    </head>
+    <body>
+        <header class="header">
+            <div class="container">
+                <div class="header__header">
+                    <div class="header__location">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_301_12787)">
+                                <path
+                                    d="M12 2C8.13 2 5 5.13 5 9C5 13.17 9.42 18.92 11.24 21.11C11.64 21.59 12.37 21.59 12.77 21.11C14.58 18.92 19 13.17 19 9C19 5.13 15.87 2 12 2ZM12 11.5C10.62 11.5 9.5 10.38 9.5 9C9.5 7.62 10.62 6.5 12 6.5C13.38 6.5 14.5 7.62 14.5 9C14.5 10.38 13.38 11.5 12 11.5Z"
+                                    fill="white"
+                                />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_301_12787">
+                                    <rect width="24" height="24" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+
+                        <span>Ташкент</span>
+                    </div>
+                    <nav class="header__nav">
+                        <a href="" class="header__link">Доставка</a>
+                        <a href="" class="header__link">Как стать продавцом</a>
+                        <a href="" class="header__link">Как стать инвестором </a>
+                        <a href="" class="header__link">Условия рассрочки</a>
+                    </nav>
+                    <div class="header__lang">
+                        <select name="lang">
+                            <option selected>Рус <img src="./assets/img/icons/arrow-down.svg" alt="" /></option>
+                            <option value="">Англ <img src="./assets/img/icons/arrow-down.svg" alt="" /></option>
+                        </select>
+                    </div>
+                </div>
+                <div class="header__content">
+                    <a href="/" class="header__logo">
+                        <img src="./assets/img/logo-header.svg" alt="" class="logo" />
+                    </a>
+                    <button class="button catalog-button">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_216_2618)">
+                                <path
+                                    d="M4 18H20C20.55 18 21 17.55 21 17C21 16.45 20.55 16 20 16H4C3.45 16 3 16.45 3 17C3 17.55 3.45 18 4 18ZM4 13H20C20.55 13 21 12.55 21 12C21 11.45 20.55 11 20 11H4C3.45 11 3 11.45 3 12C3 12.55 3.45 13 4 13ZM3 7C3 7.55 3.45 8 4 8H20C20.55 8 21 7.55 21 7C21 6.45 20.55 6 20 6H4C3.45 6 3 6.45 3 7Z"
+                                    fill="white"
+                                />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_216_2618">
+                                    <rect width="24" height="24" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+
+                        Каталог товаров
+                    </button>
+                    <div class="header__search">
+                        <svg class="header__search-logo" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_216_2625)">
+                                <path
+                                    d="M15.5 13.9999H14.71L14.43 13.7299C15.63 12.3299 16.25 10.4199 15.91 8.38989C15.44 5.60989 13.12 3.38989 10.32 3.04989C6.09 2.52989 2.53 6.08989 3.05 10.3199C3.39 13.1199 5.61 15.4399 8.39 15.9099C10.42 16.2499 12.33 15.6299 13.73 14.4299L14 14.7099V15.4999L18.25 19.7499C18.66 20.1599 19.33 20.1599 19.74 19.7499C20.15 19.3399 20.15 18.6699 19.74 18.2599L15.5 13.9999ZM9.5 13.9999C7.01 13.9999 5 11.9899 5 9.49989C5 7.00989 7.01 4.99989 9.5 4.99989C11.99 4.99989 14 7.00989 14 9.49989C14 11.9899 11.99 13.9999 9.5 13.9999Z"
+                                    fill="#969393"
+                                />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_216_2625">
+                                    <rect width="24" height="24" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                        <svg class="header__search-clear" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="10" cy="10" r="10" fill="#C4C4C4" />
+                            <path
+                                d="M10.94 9.9998L13.8066 7.1398C13.9322 7.01426 14.0027 6.844 14.0027 6.66646C14.0027 6.48893 13.9322 6.31867 13.8066 6.19313C13.6811 6.0676 13.5108 5.99707 13.3333 5.99707C13.1558 5.99707 12.9855 6.0676 12.86 6.19313L9.99996 9.0598L7.13996 6.19313C7.01442 6.0676 6.84416 5.99707 6.66663 5.99707C6.48909 5.99707 6.31883 6.0676 6.19329 6.19313C6.06776 6.31867 5.99723 6.48893 5.99723 6.66646C5.99723 6.844 6.06776 7.01426 6.19329 7.1398L9.05996 9.9998L6.19329 12.8598C6.13081 12.9218 6.08121 12.9955 6.04737 13.0767C6.01352 13.158 5.99609 13.2451 5.99609 13.3331C5.99609 13.4211 6.01352 13.5083 6.04737 13.5895C6.08121 13.6708 6.13081 13.7445 6.19329 13.8065C6.25527 13.8689 6.329 13.9185 6.41024 13.9524C6.49148 13.9862 6.57862 14.0037 6.66663 14.0037C6.75463 14.0037 6.84177 13.9862 6.92301 13.9524C7.00425 13.9185 7.07798 13.8689 7.13996 13.8065L9.99996 10.9398L12.86 13.8065C12.9219 13.8689 12.9957 13.9185 13.0769 13.9524C13.1581 13.9862 13.2453 14.0037 13.3333 14.0037C13.4213 14.0037 13.5084 13.9862 13.5897 13.9524C13.6709 13.9185 13.7446 13.8689 13.8066 13.8065C13.8691 13.7445 13.9187 13.6708 13.9526 13.5895C13.9864 13.5083 14.0038 13.4211 14.0038 13.3331C14.0038 13.2451 13.9864 13.158 13.9526 13.0767C13.9187 12.9955 13.8691 12.9218 13.8066 12.8598L10.94 9.9998Z"
+                                fill="#00263A"
+                            />
+                        </svg>
+
+                        <input type="text" class="search" placeholder="Поиск по товарам" />
+                        <button class="header__search-button">Поиск</button>
+                    </div>
+                    <div class="header__buttons">
+                        <a href="#" class="header__button"
+                            ><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    fill-rule="evenodd"
+                                    clip-rule="evenodd"
+                                    d="M20.8382 4.60987C19.8066 3.57786 18.4073 2.99805 16.9482 2.99805C15.489 2.99805 14.0897 3.57786 13.0582 4.60987L11.9982 5.66987L10.9382 4.60987C8.78978 2.46148 5.30655 2.46148 3.15817 4.60987C1.00978 6.75826 1.00978 10.2415 3.15817 12.3899L4.21817 13.4499L11.9982 21.2299L19.7782 13.4499L20.8382 12.3899C21.8702 11.3583 22.45 9.95901 22.45 8.49987C22.45 7.04073 21.8702 5.6414 20.8382 4.60987Z"
+                                    stroke="white"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                            </svg>
+                            <span>Избранное</span>
+                        </a>
+                        <a href="#" class="header__button"
+                            ><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    fill-rule="evenodd"
+                                    clip-rule="evenodd"
+                                    d="M8 23C9.10457 23 10 22.1046 10 21C10 19.8954 9.10457 19 8 19C6.89543 19 6 19.8954 6 21C6 22.1046 6.89543 23 8 23Z"
+                                    stroke="white"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                                <path
+                                    fill-rule="evenodd"
+                                    clip-rule="evenodd"
+                                    d="M20 23C21.1046 23 22 22.1046 22 21C22 19.8954 21.1046 19 20 19C18.8954 19 18 19.8954 18 21C18 22.1046 18.8954 23 20 23Z"
+                                    stroke="white"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                                <path
+                                    d="M5.67 6H23L21.32 14.39C21.1313 15.3402 20.2886 16.0186 19.32 16H8.75C7.73948 16.0086 6.88134 15.262 6.75 14.26L5.23 2.74C5.09962 1.7456 4.25291 1.00152 3.25 1H1"
+                                    stroke="white"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                            </svg>
+                            <span>Корзина</span>
+                        </a>
+                        <a href="#" class="header__button"
+                            ><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_216_2645)">
+                                    <path
+                                        d="M12 5.25C13.2375 5.25 14.25 6.2625 14.25 7.5C14.25 8.7375 13.2375 9.75 12 9.75C10.7625 9.75 9.75 8.7375 9.75 7.5C9.75 6.2625 10.7625 5.25 12 5.25ZM12 16.5C15.0375 16.5 18.525 17.9513 18.75 18.75H5.25C5.50875 17.94 8.97375 16.5 12 16.5ZM12 3C9.51375 3 7.5 5.01375 7.5 7.5C7.5 9.98625 9.51375 12 12 12C14.4862 12 16.5 9.98625 16.5 7.5C16.5 5.01375 14.4862 3 12 3ZM12 14.25C8.99625 14.25 3 15.7575 3 18.75V21H21V18.75C21 15.7575 15.0037 14.25 12 14.25Z"
+                                        fill="white"
+                                    />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_216_2645">
+                                        <rect width="24" height="24" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                            <span>Войти</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <header class="header-mobile">
+            <div class="container">
+                <div class="header-mobile__header">
+                    <div class="menu">menu</div>
+                    <a href="/"><img class="header-mobile__logo" src="./assets/img/logo-header.svg" alt="" /></a>
+                    <div class="header-mobile__buttons">
+                        <a href="#" class="header-mobile__button"
+                            ><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_216_2645)">
+                                    <path
+                                        d="M12 5.25C13.2375 5.25 14.25 6.2625 14.25 7.5C14.25 8.7375 13.2375 9.75 12 9.75C10.7625 9.75 9.75 8.7375 9.75 7.5C9.75 6.2625 10.7625 5.25 12 5.25ZM12 16.5C15.0375 16.5 18.525 17.9513 18.75 18.75H5.25C5.50875 17.94 8.97375 16.5 12 16.5ZM12 3C9.51375 3 7.5 5.01375 7.5 7.5C7.5 9.98625 9.51375 12 12 12C14.4862 12 16.5 9.98625 16.5 7.5C16.5 5.01375 14.4862 3 12 3ZM12 14.25C8.99625 14.25 3 15.7575 3 18.75V21H21V18.75C21 15.7575 15.0037 14.25 12 14.25Z"
+                                        fill="white"
+                                    />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_216_2645">
+                                        <rect width="24" height="24" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
+                        <a href="#" class="header-mobile__button"
+                            ><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    fill-rule="evenodd"
+                                    clip-rule="evenodd"
+                                    d="M8 23C9.10457 23 10 22.1046 10 21C10 19.8954 9.10457 19 8 19C6.89543 19 6 19.8954 6 21C6 22.1046 6.89543 23 8 23Z"
+                                    stroke="white"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                                <path
+                                    fill-rule="evenodd"
+                                    clip-rule="evenodd"
+                                    d="M20 23C21.1046 23 22 22.1046 22 21C22 19.8954 21.1046 19 20 19C18.8954 19 18 19.8954 18 21C18 22.1046 18.8954 23 20 23Z"
+                                    stroke="white"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                                <path
+                                    d="M5.67 6H23L21.32 14.39C21.1313 15.3402 20.2886 16.0186 19.32 16H8.75C7.73948 16.0086 6.88134 15.262 6.75 14.26L5.23 2.74C5.09962 1.7456 4.25291 1.00152 3.25 1H1"
+                                    stroke="white"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                            </svg>
+                        </a>
+
+                        <a href="#" class="header-mobile__button"
+                            ><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    fill-rule="evenodd"
+                                    clip-rule="evenodd"
+                                    d="M20.8382 4.60987C19.8066 3.57786 18.4073 2.99805 16.9482 2.99805C15.489 2.99805 14.0897 3.57786 13.0582 4.60987L11.9982 5.66987L10.9382 4.60987C8.78978 2.46148 5.30655 2.46148 3.15817 4.60987C1.00978 6.75826 1.00978 10.2415 3.15817 12.3899L4.21817 13.4499L11.9982 21.2299L19.7782 13.4499L20.8382 12.3899C21.8702 11.3583 22.45 9.95901 22.45 8.49987C22.45 7.04073 21.8702 5.6414 20.8382 4.60987Z"
+                                    stroke="white"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="header-mobile__search">
+                    <svg class="header-mobile__search-logo" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_216_2625)">
+                            <path
+                                d="M15.5 13.9999H14.71L14.43 13.7299C15.63 12.3299 16.25 10.4199 15.91 8.38989C15.44 5.60989 13.12 3.38989 10.32 3.04989C6.09 2.52989 2.53 6.08989 3.05 10.3199C3.39 13.1199 5.61 15.4399 8.39 15.9099C10.42 16.2499 12.33 15.6299 13.73 14.4299L14 14.7099V15.4999L18.25 19.7499C18.66 20.1599 19.33 20.1599 19.74 19.7499C20.15 19.3399 20.15 18.6699 19.74 18.2599L15.5 13.9999ZM9.5 13.9999C7.01 13.9999 5 11.9899 5 9.49989C5 7.00989 7.01 4.99989 9.5 4.99989C11.99 4.99989 14 7.00989 14 9.49989C14 11.9899 11.99 13.9999 9.5 13.9999Z"
+                                fill="#969393"
+                            />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_216_2625">
+                                <rect width="24" height="24" fill="white" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                    <input placeholder="Поиск" type="text" class="header-mobile__search-input" />
+                </div>
+            </div>
+        </header>
+
+        <main class="main">
+            <section class="basket">
+                <div class="container">
+                    <h2 class="basket__title">Корзина</h2>
+                    <div class="basket-wrapper">
+                        <div class="basket-left">
+                            <div class="basket-left__header">
+                                <div>
+                                    <h3 class="basket-left__header-title">Корзина</h3>
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                            <input type="checkbox" class="form-check-input" name="" id="" value="checkedValue" />
+                                            Выбрать все
+                                        </label>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="basket-left__header-right">
+                                        <div class="form-group">
+                                            <label for="">Купон код :</label>
+                                            <input type="text" name="" id="" class="form-control" placeholder="" />
+                                        </div>
+                                        <button class="button button-login">Применять</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="basket-left__content">
+                                <div class="basket__item">
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" name="" id="" value="checkedValue" />
+                                    </div>
+                                    <img src="./assets/img/products/product.png" alt="" class="basket__item-img" />
+                                    <div class="basket__item-content">
+                                        <h2 class="basket__item-title">
+                                            Смартфон Poco X3 NFC 6/128Gb: 6.67" 2400х1080/IPS Snapdragon 732G 6Gb/128Gb 64+13+2+2Mp/20Mp 5160mAh,
+                                            Xiaomi
+                                        </h2>
+                                        <div class="basket__item-content__buttons"><a href="#">В избранное</a><a href="#">Удалить</a></div>
+                                    </div>
+                                    <div class="basket__item-count">
+                                        <button class="basket__item-count__button">-</button>
+                                        <span>1</span>
+                                        <button class="basket__item-count__button">+</button>
+                                    </div>
+                                    <div class="basket__item-sum">
+                                        <p class="basket__item-sum-old">1200 650 000 сум</p>
+                                        <p class="basket__item-sum-new">350 500 000 сум</p>
+                                        <p class="basket__item-sum-instalments">рассрочка 10 165 000 сум/мес</p>
+                                    </div>
+                                </div>
+                                <div class="basket__item">
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" name="" id="" value="checkedValue" />
+                                    </div>
+                                    <img src="./assets/img/products/product.png" alt="" class="basket__item-img" />
+                                    <div class="basket__item-content">
+                                        <h2 class="basket__item-title">
+                                            Смартфон Poco X3 NFC 6/128Gb: 6.67" 2400х1080/IPS Snapdragon 732G 6Gb/128Gb 64+13+2+2Mp/20Mp 5160mAh,
+                                            Xiaomi
+                                        </h2>
+                                        <div class="basket__item-content__buttons"><a href="#">В избранное</a><a href="#">Удалить</a></div>
+                                    </div>
+                                    <div class="basket__item-count">
+                                        <button class="basket__item-count__button">-</button>
+                                        <span>1</span>
+                                        <button class="basket__item-count__button">+</button>
+                                    </div>
+                                    <div class="basket__item-sum">
+                                        <p class="basket__item-sum-old">1200 650 000 сум</p>
+                                        <p class="basket__item-sum-new">350 500 000 сум</p>
+                                        <p class="basket__item-sum-instalments">рассрочка 10 165 000 сум/мес</p>
+                                    </div>
+                                </div>
+                                <div class="basket__item">
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" name="" id="" value="checkedValue" />
+                                    </div>
+                                    <img src="./assets/img/products/product.png" alt="" class="basket__item-img" />
+                                    <div class="basket__item-content">
+                                        <h2 class="basket__item-title">
+                                            Смартфон Poco X3 NFC 6/128Gb: 6.67" 2400х1080/IPS Snapdragon 732G 6Gb/128Gb 64+13+2+2Mp/20Mp 5160mAh,
+                                            Xiaomi
+                                        </h2>
+                                        <div class="basket__item-content__buttons"><a href="#">В избранное</a><a href="#">Удалить</a></div>
+                                    </div>
+                                    <div class="basket__item-count">
+                                        <button class="basket__item-count__button">-</button>
+                                        <span>1</span>
+                                        <button class="basket__item-count__button">+</button>
+                                    </div>
+                                    <div class="basket__item-sum">
+                                        <p class="basket__item-sum-old">1200 650 000 сум</p>
+                                        <p class="basket__item-sum-new">350 500 000 сум</p>
+                                        <p class="basket__item-sum-instalments">рассрочка 10 165 000 сум/мес</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="basket-left__footer">
+                                <p>Удалить выбранные</p>
+                            </div>
+                        </div>
+                        <div class="basket-right">
+                            <div class="basket-right__buy">
+                                <div class="basket-right__buy-header">
+                                    <p>Итого:</p>
+                                    <span> 1 500 000 сум </span>
+                                </div>
+                                <div class="basket-right__buy-body">
+                                    <div class="basket-right__buy-sale">
+                                        <p>Скидка</p>
+                                        <span class="red">-1 000 000 сум </span>
+                                    </div>
+                                    <div class="basket-right__buy-sale">
+                                        <p>Товары, 3 шт.</p>
+                                        <span>100 500 000 сум</span>
+                                    </div>
+                                </div>
+                                <div class="basket-right__buy-footer">
+                                    <div class="basket-right__buy-delivery">
+                                        <img src="./assets/img/icons/CheckCircle.svg" alt="" />
+                                        <div class="basket-right__buy-delivery-content">
+                                            <p class="basket-right__buy-delivery-content-title">Бесплатно доставим ваш заказ</p>
+                                            <p class="basket-right__buy-delivery-content-desc">Бесплатная и экспресс-доставка</p>
+                                        </div>
+                                    </div>
+                                    <button class="button basket-right__button">Перейти к оформлению</button>
+                                </div>
+                            </div>
+                            <div class="basket-right__instalments">
+                                <h2 class="basket-right__instalments-title">Купить товар в рассрочку</h2>
+                                <div class="basket-right__instalments-help">
+                                    Первоначальный взнос нет
+                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M6.99967 0.333374C3.31967 0.333374 0.333008 3.32004 0.333008 7.00004C0.333008 10.68 3.31967 13.6667 6.99967 13.6667C10.6797 13.6667 13.6663 10.68 13.6663 7.00004C13.6663 3.32004 10.6797 0.333374 6.99967 0.333374ZM6.99967 12.3334C4.05967 12.3334 1.66634 9.94004 1.66634 7.00004C1.66634 4.06004 4.05967 1.66671 6.99967 1.66671C9.93967 1.66671 12.333 4.06004 12.333 7.00004C12.333 9.94004 9.93967 12.3334 6.99967 12.3334ZM6.33301 9.66671H7.66634V11H6.33301V9.66671ZM7.40634 3.02671C6.03301 2.82671 4.81967 3.67337 4.45301 4.88671C4.33301 5.27337 4.62634 5.66671 5.03301 5.66671H5.16634C5.43967 5.66671 5.65967 5.47337 5.75301 5.22004C5.96634 4.62671 6.59967 4.22004 7.28634 4.36671C7.91967 4.50004 8.38634 5.12004 8.33301 5.76671C8.26634 6.66004 7.25301 6.85337 6.69967 7.68671C6.69967 7.69337 6.69301 7.69337 6.69301 7.70004C6.68634 7.71337 6.67967 7.72004 6.67301 7.73337C6.61301 7.83337 6.55301 7.94671 6.50634 8.06671C6.49967 8.08671 6.48634 8.10004 6.47967 8.12004C6.47301 8.13337 6.47301 8.14671 6.46634 8.16671C6.38634 8.39337 6.33301 8.66671 6.33301 9.00004H7.66634C7.66634 8.72004 7.73967 8.48671 7.85301 8.28671C7.86634 8.26671 7.87301 8.24671 7.88634 8.22671C7.93967 8.13337 8.00634 8.04671 8.07301 7.96671C8.07967 7.96004 8.08634 7.94671 8.09301 7.94004C8.15968 7.86004 8.23301 7.78671 8.31301 7.71337C8.95301 7.10671 9.81967 6.61337 9.63968 5.34004C9.47967 4.18004 8.56634 3.20004 7.40634 3.02671Z"
+                                            fill="#3959FE"
+                                        />
+                                    </svg>
+                                </div>
+                                <div class="basket-right__instalments-period">
+                                    <p>Срок рассрочки, месяц:</p>
+                                    <div class="basket-right__instalments-period-btns">
+                                        <span class="active">3 мес.</span>
+                                        <span>6 мес.</span>
+                                        <span>9 мес.</span>
+                                        <span>12 мес.</span>
+                                    </div>
+                                    <hr />
+                                </div>
+                                <div class="basket-right__instalments-payment">
+                                    <p>Ежемесячный платеж:</p>
+                                    <span>100 911 000 сум</span>
+                                </div>
+                                <button class="button basket-right__button">Перейти к оформлению</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__content footer-mobile">
+                    <div class="accordion accordion-footer" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button
+                                    class="accordion-button collapsed"
+                                    type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne"
+                                    aria-expanded="false"
+                                    aria-controls="collapseOne"
+                                >
+                                    Информация
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <a href="#" class="footer__link">О нас</a>
+                                    <a href="#" class="footer__link">Условия использования</a>
+                                    <a href="#" class="footer__link">Оплата и доставка</a>
+                                    <a href="#" class="footer__link">Как стать инвестором </a>
+                                    <a href="#" class="footer__link">Как заказать</a>
+                                    <a href="#" class="footer__link">Вопросы и ответы</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button
+                                    class="accordion-button collapsed"
+                                    type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo"
+                                    aria-expanded="false"
+                                    aria-controls="collapseTwo"
+                                >
+                                    Сервис и поддержка
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <a href="#" class="footer__link">Бренды</a>
+                                    <a href="#" class="footer__link">Оплата</a>
+                                    <a href="#" class="footer__link">Доставка</a>
+                                    <a href="#" class="footer__link">Обратная связь</a>
+                                    <a href="#" class="footer__link">Контакты</a>
+                                    <a href="#" class="footer__link">FAQs</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="footer-mobile__app-title">Мобильные устройства</p>
+                    <div class="footer-mobile__apps">
+                        <a href=""><img class="img-fluid" src="./assets/img/footer/android.png" alt="" /></a>
+                        <a href=""><img class="img-fluid" src="./assets/img/footer/appstore.png" alt="" /></a>
+                    </div>
+                    <div class="footer__item">
+                        <h2 class="footer__title">Мы в соцсетях</h2>
+
+                        <div class="footer__soc">
+                            <a href="" target="_blank" class="footer__soc-item">
+                                <img src="./assets/img/icons/soc/fb.svg" alt="" />
+                            </a>
+                            <a href="" target="_blank" class="footer__soc-item">
+                                <img src="./assets/img/icons/soc/inst.svg" alt="" />
+                            </a>
+                            <a href="" target="_blank" class="footer__soc-item">
+                                <img src="./assets/img/icons/soc/twitter.svg" alt="" />
+                            </a>
+                            <a href="" target="_blank" class="footer__soc-item">
+                                <img src="./assets/img/icons/soc/google.svg" alt="" />
+                            </a>
+                        </div>
+                    </div>
+                    <a href="" class="footer-mobile__link">Соглашение о конфиденциальности</a>
+                    <a href="" class="footer-mobile__link">Пользовательское соглашение</a>
+                </div>
+                <div class="footer__content footer-desktop">
+                    <div class="footer__item">
+                        <h2 class="footer__title">Информация</h2>
+                        <a href="#" class="footer__link">О нас</a>
+                        <a href="#" class="footer__link">Условия использования</a>
+                        <a href="#" class="footer__link">Оплата и доставка</a>
+                        <a href="#" class="footer__link">Как стать инвестором </a>
+                        <a href="#" class="footer__link">Как заказать</a>
+                        <a href="#" class="footer__link">Вопросы и ответы</a>
+                    </div>
+                    <div class="footer__item">
+                        <h2 class="footer__title">Сервис и поддержка</h2>
+                        <a href="#" class="footer__link">Бренды</a>
+                        <a href="#" class="footer__link">Оплата</a>
+                        <a href="#" class="footer__link">Доставка</a>
+                        <a href="#" class="footer__link">Обратная связь</a>
+                        <a href="#" class="footer__link">Контакты</a>
+                        <a href="#" class="footer__link">FAQs</a>
+                    </div>
+                    <div class="footer__item">
+                        <p class="footer__text">Телефон: <a href="tel:+998909488684">+99890 948-86-84</a></p>
+                        <p class="footer__text">Эл.почта: <a href="mailto:dahomarket@gmail.com">dahomarket@gmail.com</a></p>
+
+                        <p class="footer__text">Адрес: <br /><span>Республика Узбекистан, город Ташкент, Юнусабад район, Шарафа Рашидова 40</span></p>
+                    </div>
+                    <div class="footer__item">
+                        <h2 class="footer__title">Мы в соцсетях</h2>
+
+                        <div class="footer__soc">
+                            <a href="" target="_blank" class="footer__soc-item">
+                                <img src="./assets/img/icons/soc/fb.svg" alt="" />
+                            </a>
+                            <a href="" target="_blank" class="footer__soc-item">
+                                <img src="./assets/img/icons/soc/inst.svg" alt="" />
+                            </a>
+                            <a href="" target="_blank" class="footer__soc-item">
+                                <img src="./assets/img/icons/soc/twitter.svg" alt="" />
+                            </a>
+                            <a href="" target="_blank" class="footer__soc-item">
+                                <img src="./assets/img/icons/soc/google.svg" alt="" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <hr class="d-none d-lg-block" />
+                <div class="footer__footer">
+                    <p class="d-block d-lg-none">
+                        «2023© ООО «DahoMarket». ИНН 123456789.<br />
+                        Все права защищены»
+                    </p>
+                    <p class="d-none d-lg-block">2023 DahoMarket. Все права защищены</p>
+                </div>
+            </div>
+        </footer>
+
+        <script type="text/javascript" src="./assets/libs/jquery-3.6.3.js"></script>
+        <script type="text/javascript" src="./assets/libs/bootstrap/bootstrap.min.js"></script>
+        <script type="text/javascript" src="./assets/libs/slick/slick.min.js"></script>
+        <script type="text/javascript" src="./assets/js/index.js"></script>
+    </body>
+</html>
