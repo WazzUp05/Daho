@@ -474,6 +474,30 @@
             width: fit-content;
         }
 
+        &__delivery {
+            display: flex;
+            align-items: flex-start;
+
+            &-content {
+                margin-left: 1.1rem;
+            }
+
+            &-title {
+                font-weight: 600;
+                font-size: 1.6rem;
+                line-height: 2.4rem;
+                color: #00263A;
+                margin-bottom: 4px;
+            }
+
+            &-desc {
+                font-size: 1.2rem;
+                line-height: 1.6rem;
+                color: #7E7E83;
+                margin-bottom: 0;
+            }
+        }
+
         &__buy {
             .button {
                 width: 100%;

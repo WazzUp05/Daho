@@ -191,6 +191,10 @@
         text-decoration: none;
         margin-right: 1.2rem;
 
+        &:hover {
+            opacity: 0.8;
+        }
+
         span {
             height: 1.5rem;
             font-weight: 400;
@@ -320,6 +324,7 @@
     height: 100%;
     padding: 1.3rem 1.6rem;
     border-radius: 12px;
+    text-decoration: none;
 
     &:hover {
         background: #F6F6FB
@@ -392,6 +397,7 @@
     font-weight: 700;
     font-size: 1.8rem;
     line-height: 2.4rem;
+    text-decoration: none;
 }
 
 .sub-menu-list {
@@ -413,6 +419,7 @@
     height: 100%;
     font-size: 1.4rem;
     line-height: 2rem;
+    text-decoration: none;
 
     p {
         color: #8E8E93;

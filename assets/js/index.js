@@ -310,9 +310,9 @@ $(document).ready(function () {
                 installment = sum / 3;
         }
 
-        result.innerHTML = `Ежемесячный платёж: <div class="form__credit-result">${Intl.NumberFormat('ru-RU').format(
-            Math.floor(installment)
-        )} сум/мес</div>`;
+        result.innerHTML = `Ежемесячный платёж: <div class="form__credit-result">${Intl.NumberFormat(
+            'ru-RU'
+        ).format(Math.floor(installment))} сум/мес</div>`;
     }
 
     $('#delivery-tab').on('click', function () {
@@ -349,6 +349,7 @@ $(document).ready(function () {
 
     // Открытие меню
     $('.catalog-button').on('click', function () {
+        console.log('click menu');
         $('.desktop-menu').toggleClass('active');
         if ($('.desktop-menu').hasClass('active')) {
             $('body').css('overflow-y', 'hidden');
