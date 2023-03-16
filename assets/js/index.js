@@ -251,7 +251,7 @@ $(document).ready(function () {
     // Показ и скрытие блока рассрочки
     const radioInputsPay = document.querySelectorAll('.input-option-pay');
 
-    radioInputsPay.forEach(input => {
+    radioInputsPay.forEach((input) => {
         input.addEventListener('change', showPaymenByInstalments);
     });
 
@@ -272,7 +272,7 @@ $(document).ready(function () {
 
     // let month;
 
-    radioInputs.forEach(input => {
+    radioInputs.forEach((input) => {
         // if (input.checked) {
         //     if (input.value === '3') {
         //         month = 3;
@@ -355,4 +355,7 @@ $(document).ready(function () {
             $('body').css('overflow-y', 'hidden');
         } else $('body').css('overflow-y', 'auto');
     });
+
+    // Tooltips on
+    $('[data-toggle="tooltip"]').tooltip();
 });

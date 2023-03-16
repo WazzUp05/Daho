@@ -141,59 +141,7 @@
     }
 }
 
-@media (max-width: 991px) {
-    .basket {
-        &__item {
-            &-right {
-                align-items: flex-end;
-            }
 
-            &-sum {
-                &-old {
-                    font-size: 1.2rem;
-                    line-height: 1.6rem;
-                    margin-bottom: 4px;
-                }
-
-                &-new {
-                    font-weight: 600;
-                    font-size: 1.4rem;
-                    line-height: 2rem;
-                    margin-bottom: 8px;
-                }
-
-
-                &-instalments {
-                    margin-bottom: 0;
-                    font-size: 1.2rem;
-                    line-height: 1.6rem;
-                }
-            }
-
-            &-count {
-                margin-right: 6.4rem;
-            }
-
-            img {
-                width: 6.4rem;
-                height: 6.4rem;
-            }
-
-            &-title {
-                font-weight: 400;
-                font-size: 1.2rem;
-                line-height: 1.6rem;
-                margin-bottom: 0;
-            }
-
-            &-content {
-                &__buttons {
-                    display: none;
-                }
-            }
-        }
-    }
-}
 
 .basket-wrapper {
     display: grid;
@@ -227,6 +175,20 @@
         &-right {
             display: flex;
             align-items: flex-end;
+
+            &--mobile {
+                display: none;
+            }
+
+            &-coupon {
+                display: none;
+                font-size: 1.4rem;
+                line-height: 2rem;
+
+                span {
+                    font-weight: 600;
+                }
+            }
 
             input {
                 width: 100%;
@@ -596,4 +558,146 @@
     display: flex;
     align-items: center;
 
+}
+
+@media (max-width: 991px) {
+    .checkout {
+        .button-login {
+            margin-left: 0;
+            margin-top: 2.4rem;
+            max-width: 100%;
+        }
+
+        .basket {
+            &-left {
+
+
+                &__wrapper {
+                    padding: 1.4rem;
+
+                    .basket-left__wrapper__body-text {
+                        font-size: 1.4rem;
+                        line-height: 2.4rem;
+                    }
+
+                    &-wrapper {
+                        flex-direction: column;
+                        gap: 0;
+                    }
+                }
+            }
+
+            &-right {
+                &__instalments {
+                    &-period {
+                        margin-left: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    .basket {
+        &-left {
+            &__header {
+                align-items: flex-end;
+
+                .form-check {
+                    margin-bottom: 0;
+
+                    label {
+                        font-size: 1.4rem;
+                        line-height: 2rem;
+                    }
+                }
+
+                &-title {
+                    font-size: 1.6rem;
+                    line-height: 1.9rem;
+                    font-weight: 700;
+                    color: #022B4A;
+                    margin-bottom: 1.8rem;
+                }
+
+                &-right {
+                    align-items: flex-end;
+                    display: none;
+
+                    &-coupon {
+                        display: block;
+                    }
+
+                    &--mobile {
+                        display: block;
+                        margin-top: 2.4rem;
+
+                        .form-group {
+                            min-width: auto;
+                            width: 100%;
+                        }
+
+                        .button-login {
+                            margin-left: 0;
+                            max-width: 100%;
+                            margin-top: 1.6rem;
+                        }
+                    }
+
+                }
+            }
+        }
+
+        &__item {
+
+            &-right {
+                align-items: flex-end;
+                justify-content: space-between;
+                width: 100%;
+            }
+
+            &-sum {
+                &-old {
+                    font-size: 1.2rem;
+                    line-height: 1.6rem;
+                    margin-bottom: 4px;
+                }
+
+                &-new {
+                    font-weight: 600;
+                    font-size: 1.4rem;
+                    line-height: 2rem;
+                    margin-bottom: 8px;
+                }
+
+
+                &-instalments {
+                    margin-bottom: 0;
+                    font-size: 1.2rem;
+                    line-height: 1.6rem;
+                }
+            }
+
+            // &-count {
+            //     margin-right: 6.4rem;
+            // }
+
+            img {
+                width: 6.4rem;
+                height: 6.4rem;
+            }
+
+            &-title {
+                font-weight: 400;
+                font-size: 1.2rem;
+                line-height: 1.6rem;
+                margin-bottom: 0;
+            }
+
+            &-content {
+                &__buttons {
+                    display: none;
+                }
+            }
+        }
+    }
 }
